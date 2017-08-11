@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   get '/detalle', to: 'static#detalle'
   get '/financiacion', to: 'static#financiacion'
   get '/citas', to: 'static#citas'
-  get '/contact', to: 'static#contact'
+  get '/contacto', to: 'static#contacto'
   get '/send_finan', to: 'forms#finan'
 end

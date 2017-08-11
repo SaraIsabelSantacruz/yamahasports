@@ -2931,9 +2931,9 @@ span.tw-meta {
 .tw-contact-form .tw-form-style-2 input[type="submit"],
 .tw-contact-form .tw-form-style-3 input[type="submit"],
 .tw-contact-form .tw-form-style-4 input[type="submit"] {
-  background: #151515;
+  background: rgba(204, 39, 39, 0.68);
   color: #fff;
-  border: 1px solid #151515;
+  border: 1px solid rgba(204, 39, 39, 0.68);
 }
 .tw-contact-form .tw-form-style-2 input[type="submit"]:hover,
 .tw-contact-form .tw-form-style-3 input[type="submit"]:hover,
