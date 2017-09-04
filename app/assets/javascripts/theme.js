@@ -1,6 +1,8 @@
 $(window).on('load', function () {
     "use strict";
 
+
+
     $( function() {
         $( "#datepicker" ).datepicker();
       } );
@@ -548,6 +550,7 @@ $(window).on('load', function () {
     /* Scroll */
     jQuery(window).scroll();
 });
+
 $(window).on('tw-resize',function () {
     "use strict";
     /* Sidebar Menu */

@@ -308,7 +308,7 @@ blockquote:after {
   height: 100%;
 }
 .tw-header.tw-header-sidebar {
-  width: 270px;
+  width: 100%;
   position: fixed;
   z-index: 2;
   left: 0;
@@ -388,9 +388,11 @@ blockquote:after {
   left: 30px;
 }
 .tw-header .uk-navbar-right {
-  right: 60px;
-  z-index: 10;
-  top: -30px;
+  right: 33px;
+    z-index: 10;
+    width: 0px;
+    height: 100%;
+    top: 148px;
 }
 .tw-header .uk-container .uk-navbar-left {
   left: 40px;
@@ -534,7 +536,7 @@ ul.uk-nav-sub{
   top: 100%;
   left: 0;
   padding: 18px 0;
-  width: auto;
+  width: 919px;
   min-width: 220px;
   background-color: #151515;
   box-sizing: border-box;
@@ -561,7 +563,7 @@ ul.uk-nav-sub{
   margin-top: -6px;
   z-index: -1;
 }
-.tw-main-menu .sub-menu > li:hover > a {
+.div > li:hover > a {
   padding-left: 35px;
   color: #fff;
 }
@@ -1784,6 +1786,9 @@ div.entry-tags{
 }
 .uk-button.uk-button-small.uk-button-radius {
   border-radius: 15px;
+  background-color: rgba(255, 6, 6, 0.54);
+  color: #fff;
+  border-color: rgba(105, 9, 9, 0.7);
 }
 .uk-button.uk-button-large.uk-button-radius {
   border-radius: 30px;
@@ -3572,7 +3577,7 @@ ul.portfolio-single-meta + .portfolio-btn {
   margin-right: -3px;
 }
 .tw-socials a {
-  display: inline-block;
+  /*display: inline-block;*/
   margin: 0 6px 20px;
   color: #999;
 }
@@ -3583,7 +3588,7 @@ ul.portfolio-single-meta + .portfolio-btn {
   line-height: 30px;
   text-align: center;
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 0px;
   transition: all 0.2s ease-out;
 }
 .tw-socials a:hover i {
@@ -3701,6 +3706,10 @@ ul.portfolio-single-meta + .portfolio-btn {
   background-color: #1da1f2;
 }
 
+.tw-socials2.with-hover a [class*="linkedin"] {
+  background-color: #035d94;
+}
+
 
 
 .tw-socials.with-hover a:hover [class*="tumblr"] {
@@ -3800,6 +3809,11 @@ ul.portfolio-single-meta + .portfolio-btn {
 .tw-socials.tw-with-bg a > i[data-uk-icon*="reddit"],
 .tw-socials.tw-with-bg a > i[class*="reddit"] {
   background-color: #ff4500;
+}
+
+.tw-socials.tw-with-bg a > i[data-uk-icon*="linkedin"],
+.tw-socials.tw-with-bg a > i[class*="linkedin"] {
+  background-color: #035d94;
 }
 .tw-socials.tw-with-bg a > i:hover .ion-chatbubbles {
   background-color: #151515;
@@ -4782,6 +4796,7 @@ footer.uk-light a {
 .tw-onhover {
   overflow: hidden;
   position: relative;
+  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.62);
 }
 .tw-onhover:before{
   position: absolute;
@@ -5578,4 +5593,13 @@ footer.uk-light a {
 
 .ui-datepicker table{
   border-collapse: separate;
+}
+
+.div{
+width: 278px;
+border-right: 1px solid white;
+}
+
+.imgs img{
+  margin-left:20px;
 }

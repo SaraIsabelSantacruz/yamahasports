@@ -7,26 +7,26 @@
     <link rel="shortcut icon" href="/images/favicon.png">
 
     <title>YamahaSport</title>
-
-    <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= csrf_meta_tags %>
-    <%= javascript_include_tag 'application'%>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700%7CLora:400,400i%7CShadows+Into+Light:400" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.4.3/sweetalert2.min.js'
-             ></script>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.4.3/sweetalert2.min.css' rel='stylesheet'>
-
   </head>
 
-  <body>
+  <body class="loader">
+
+    <div class="tw-preloader">
+      <div data-uk-spinner></div>
+    </div>
+
     <div class="header-container tw-header">
       <nav class="uk-navbar-container uk-flex-center" data-uk-navbar>
 
         <div class="uk-navbar-left">
           <div class="tw-logo">
             <h3 class="site-name">
-              <a href="index.html"><img alt="logo" src="/images/yamahaLogo.png">
+              <a href="/"><img alt="logo" src="/images/yamahaLogo.png">
               </a>
             </h3>
           </div>
@@ -34,22 +34,152 @@
 
         <div class="uk-navbar-center">
           <ul class="tw-main-menu uk-visible@m">
+
             <li class="menu-item">
               <a href="/">Home</a>
             </li>
 
             <li class="menu-item menu-item-has-children">
-              <a>Motocicletas Nuevas</a>
+              <a href="/">Motocicletas Nuevas</a>
               <ul class="sub-menu uk-animation-fade">
-                <li><a href="/catalogo">Automática y Semiautomática</a></li>
-                <li><a href="/catalogo">Urbanas trabajo y Deportivas</a></li>
-                <li><a href="/catalogo">Todo Terreno</a></li>
-                <li><a href="/catalogo">Deportivas</a></li>
-                <li><a href="/catalogo">Super Deportivas</a></li>
-                <li><a href="/catalogo">Sport Heritage</a></li>
-                <li><a href="/catalogo">Turismo</a></li>
-                <li><a href="/catalogo">Motocross y Enduro</a></li>
-                <li><a href="/catalogo">Cuatrimotos</a></li>
+                <div class="div">
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Urbanas trabajo y Deportivas</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Todo Terreno</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px; top:-78px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Deportivas</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px; top:-114px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Súper Deportivas</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px; top:-150px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Sport Heritage</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px; top:-186px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Turismo</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px; top:-222px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Motocross y Enduro</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px; top:-258px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="menu-item menu-item-has-children">
+                    <a href="/catalogo">Cuatrimotos</a>
+                    <div class="sub-menu uk-animation-fade" style="background:rgba(255, 255, 255, 0); width: 641px; top:-294px;">
+                      <div class="imgs">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                      <div class="imgs" style="margin-top:55px;">
+                        <img src="/avatar_374370202069_128.png" alt="">
+                        <img src="/avatar2.png" alt="">
+                        <img src="/avatar3.jpg" alt="">
+                        <img src="/avatar4.jpg" alt="">
+                      </div>
+                    </div>
+                  </li>
+                </div>
               </ul>
             </li>
             <li class="menu-item">
@@ -72,6 +202,9 @@
               <a href=""><i class="fa uk-icon-button fa-instagram"></i></a>
               <a href=""><i class="fa uk-icon-button fa-google-plus"></i></a>
               <a href=""><i class="fa uk-icon-button fa-youtube"></i></a>
+              <a href=""><i class="uk-icon-button tw-margin fa fa-pinterest"></i></a>
+              <a href=""><i class="uk-icon-button tw-margin fa fa-linkedin"></i></a>
+
             </div>
           </div>
           <div class="tw-header-meta">
@@ -123,24 +256,12 @@
       </nav>
     </div>
   </div>
-  <% if notice %>
-      <script>
-        swal("<%= notice %>");
-      </script>
-    <% end %>
-
-    <% if alert%>
-      <script>
-        swal("<%= alert %>");
-      </script>
-    <% end %>
-
   <%= yield %>
   <footer class="uk-section uk-padding-remove-vertical uk-light" style="background-color: #222222;">
 
     <div class="bottom-area">
       <div class="uk-container">
-        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-medium" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 200;">
+        <div class="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-medium" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-fade; delay: 200;">
           <div>
             <div class="widget">
               <div class="tw-logo">
@@ -150,74 +271,37 @@
           </div>
 
           <div>
-            <div class="uk-padding-left">
-              <div class="widget widget_recent_entries">
-                <h3 class="widget-title"><span>Popular Posts</span></h3>
-                <ul>
-                  <li>
-                    <a href="#">Suspendisse vulputate diam</a>
-                    <span class="tw-meta">January 22, 2017</span>
-                  </li>
-                  <li>
-                    <a href="#">Facilisis Nulla Elementum</a>
-                    <span class="tw-meta">January 22, 2017</span>
-                  </li>
-                  <li>
-                    <a href="#">Mauris pharetra interdum</a>
-                    <span class="tw-meta">January 22, 2017</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="widget">
-            <div class="uk-padding-left">
-              <h3 class="widget-title"><span>Useful Links</span></h3>
-              <ul>
-                <li>
-                  <a href="#">About us</a>
-                </li>
-                <li>
-                  <a href="#">Services</a>
-                </li>
-                <li>
-                  <a href="#">News</a>
-                </li>
-                <li>
-                  <a href="#">Testimonails</a>
-                </li>
-                <li>
-                  <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div>
             <div class="widget tw-contact-widget uk-padding-right">
-              <h3 class="widget-title"><span>Contact Info</span></h3>
+              <h3 class="widget-title"><span>datos de contacto</span></h3>
               <ul>
                 <li>
-                  <i class="ion-ios-location"></i>
-                  <a href="#">88 Orchard St, New York, NY 111000, United States.</a>
-                </li>
-                <li>
-                  <i class="ion-android-call"></i>
-                  <a href="#">(001) 8686 234 432</a>
+                  <i class="ion-ios-telephone"></i>
+                  <a href="#">Número</a>
                 </li>
                 <li>
                   <i class="ion-android-mail"></i>
-                  <a href="#">support@themewaves.com</a>
+                  <a href="#">Correo corporativo</a>
                 </li>
                 <li>
-                  <i class="ion-ios-world-outline"></i>
-                  <a href="#">www.themewaves.com</a>
+                  <i class="ion-ios-location"></i>
+                  <a href="#">Dirección sede 1</a>
+                </li>
+                <li>
+                  <i class="ion-ios-location"></i>
+                  <a href="#">Dirección sede 2</a>
                 </li>
               </ul>
+            </div>
+          </div>
+          <div>
+            <h3>Somos Distribuidores Oficiales</h3>
+            <div class="uk-child-width-1-2@s" data-uk-grid style="margin-top:25px;">
+              <a href="#" title="Leonard Morrison">
+                <img src="/demo/partner/partner2.png" alt="" />
+              </a>
+              <a href="#" title="Leonard Morrison">
+                <img src="/demo/partner/partner4.png" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -226,15 +310,14 @@
 
     <div class="bottom-area uk-text-center">
       <div class="uk-child-width-expand" data-uk-grid>
-        <div class="tw-element tw-socials tw-social-light with-hover">
-          <a href=""><i class="fa uk-icon-button fa-twitter"></i></a>
-          <a href=""><i class="fa uk-icon-button fa-facebook"></i></a>
-          <a href=""><i class="fa uk-icon-button fa-instagram"></i></a>
-          <a href=""><i class="fa uk-icon-button fa-pinterest"></i></a>
-          <a href=""><i class="fa uk-icon-button fa-youtube"></i></a>
-          <a href=""><i class="fa uk-icon-button fa-google-plus"></i></a>
-          <a href=""><i class="fa uk-icon-button fa-behance"></i></a>
-          <a href=""><i class="fa uk-icon-button fa-rss"></i></a>
+        <div class="tw-element tw-socials tw-with-bg tw-square-bg dark-hover">
+            <a href=""><i class="uk-icon-button tw-margin fa fa-twitter"></i></a>
+            <a href=""><i class="uk-icon-button tw-margin fa fa-facebook"></i></a>
+            <a href=""><i class="uk-icon-button tw-margin fa fa-instagram"></i></a>
+            <a href=""><i class="uk-icon-button tw-margin fa fa-pinterest"></i></a>
+            <a href=""><i class="uk-icon-button tw-margin fa fa-youtube"></i></a>
+            <a href=""><i class="uk-icon-button tw-margin fa fa-google-plus"></i></a>
+            <a href=""><i class="uk-icon-button tw-margin fa fa-linkedin"></i></a>
         </div>
       </div>
     </div>
@@ -243,7 +326,7 @@
       <div class="uk-container">
         <div class="uk-flex-middle uk-child-width-1-1 uk-child-width-expand@m" data-uk-grid>
           <div class="copyright">
-            © Copyright 2017 - All Rights Reserved
+            © Copyright 2017 - Todos los derechos reservados
           </div>
           <div class="uk-text-right">
             <a href="" data-uk-scroll>Back To Top &nbsp;&nbsp;<i class="ion-ios-arrow-up"></i></a>
@@ -252,6 +335,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
