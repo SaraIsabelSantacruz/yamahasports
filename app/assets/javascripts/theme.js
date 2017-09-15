@@ -1,7 +1,158 @@
 $(window).on('load', function () {
     "use strict";
 
+    $("li.list-acc" ).hover(function() {
+      $(".foto-acc").attr('src', '/ropa1.jpg');
+    });
 
+    $("li.list-acc2" ).hover(function() {
+      $(".foto-acc").attr('src', '/acc2.jpg');
+    });
+
+    $("li.list-acc3" ).hover(function() {
+      $(".foto-acc").attr('src', '/acc3.gif');
+    });
+
+
+    $(".a1").click(function() {
+        $("#ban2").hide();
+        $("#ban3").hide();
+        $("#ban4").hide();
+        $("#ban5").hide();
+        $("#ban6").hide();
+        $("#ban7").hide();
+        $("#ban1").fadeIn(500);
+     });
+
+     $(".a2").click(function() {
+         $("#ban1").hide();
+         $("#ban3").hide();
+         $("#ban4").hide();
+         $("#ban5").hide();
+         $("#ban6").hide();
+         $("#ban7").hide();
+         $("#ban2").fadeIn(500);
+      });
+
+      $(".a3").click(function() {
+          $("#ban1").hide();
+          $("#ban2").hide();
+          $("#ban4").hide();
+          $("#ban5").hide();
+          $("#ban6").hide();
+          $("#ban7").hide();
+          $("#ban3").fadeIn(500);
+       });
+
+       $(".a4").click(function() {
+           $("#ban1").hide();
+           $("#ban2").hide();
+           $("#ban3").hide();
+           $("#ban5").hide();
+           $("#ban6").hide();
+           $("#ban7").hide();
+           $("#ban4").fadeIn(500);
+        });
+
+        $(".a5").click(function() {
+            $("#ban1").hide();
+            $("#ban2").hide();
+            $("#ban3").hide();
+            $("#ban4").hide();
+            $("#ban6").hide();
+            $("#ban7").hide();
+            $("#ban5").fadeIn(500);
+         });
+
+         $(".a6").click(function() {
+             $("#ban1").hide();
+             $("#ban2").hide();
+             $("#ban3").hide();
+             $("#ban4").hide();
+             $("#ban5").hide();
+             $("#ban7").hide();
+             $("#ban6").fadeIn(500);
+          });
+
+          $(".a7").click(function() {
+              $("#ban1").hide();
+              $("#ban2").hide();
+              $("#ban3").hide();
+              $("#ban4").hide();
+              $("#ban5").hide();
+              $("#ban6").hide();
+              $("#ban7").fadeIn(500);
+           });
+
+           $(".a1").hover(function() {
+               $(".f2").fadeTo( "fast" , 0.5);
+               $(".f3").fadeTo( "fast" , 0.5);
+               $(".f4").fadeTo( "fast" , 0.5);
+               $(".f5").fadeTo( "fast" , 0.5);
+               $(".f6").fadeTo( "fast" , 0.5);
+               $(".f7").fadeTo( "fast" , 0.5);
+               $(".f1").fadeTo("fast", 1);
+            });
+
+            $(".a2").hover(function() {
+              $(".f1").fadeTo( "fast" , 0.5);
+              $(".f3").fadeTo( "fast" , 0.5);
+              $(".f4").fadeTo( "fast" , 0.5);
+              $(".f5").fadeTo( "fast" , 0.5);
+              $(".f6").fadeTo( "fast" , 0.5);
+              $(".f7").fadeTo( "fast" , 0.5);
+              $(".f2").fadeTo("fast", 1);
+             });
+
+             $(".a3").hover(function() {
+               $(".f2").fadeTo( "fast" , 0.5);
+               $(".f1").fadeTo( "fast" , 0.5);
+               $(".f4").fadeTo( "fast" , 0.5);
+               $(".f5").fadeTo( "fast" , 0.5);
+               $(".f6").fadeTo( "fast" , 0.5);
+               $(".f7").fadeTo( "fast" , 0.5);
+               $(".f3").fadeTo("fast", 1);
+              });
+
+              $(".a4").hover(function() {
+                $(".f2").fadeTo( "fast" , 0.5);
+                $(".f3").fadeTo( "fast" , 0.5);
+                $(".f1").fadeTo( "fast" , 0.5);
+                $(".f5").fadeTo( "fast" , 0.5);
+                $(".f6").fadeTo( "fast" , 0.5);
+                $(".f7").fadeTo( "fast" , 0.5);
+                $(".f4").fadeTo("fast", 1);
+               });
+
+               $(".a5").hover(function() {
+                 $(".f2").fadeTo( "fast" , 0.5);
+                 $(".f3").fadeTo( "fast" , 0.5);
+                 $(".f4").fadeTo( "fast" , 0.5);
+                 $(".f1").fadeTo( "fast" , 0.5);
+                 $(".f6").fadeTo( "fast" , 0.5);
+                 $(".f7").fadeTo( "fast" , 0.5);
+                 $(".f5").fadeTo("fast", 1);
+                });
+
+                $(".a6").hover(function() {
+                  $(".f2").fadeTo( "fast" , 0.5);
+                  $(".f3").fadeTo( "fast" , 0.5);
+                  $(".f4").fadeTo( "fast" , 0.5);
+                  $(".f5").fadeTo( "fast" , 0.5);
+                  $(".f1").fadeTo( "fast" , 0.5);
+                  $(".f7").fadeTo( "fast" , 0.5);
+                  $(".f6").fadeTo("fast", 1);
+                 });
+
+                 $(".a7").hover(function() {
+                   $(".f2").fadeTo( "fast" , 0.5);
+                   $(".f3").fadeTo( "fast" , 0.5);
+                   $(".f4").fadeTo( "fast" , 0.5);
+                   $(".f5").fadeTo( "fast" , 0.5);
+                   $(".f6").fadeTo( "fast" , 0.5);
+                   $(".f1").fadeTo( "fast" , 0.5);
+                   $(".f7").fadeTo("fast", 1);
+                  });
 
     $( function() {
         $( "#datepicker" ).datepicker();
