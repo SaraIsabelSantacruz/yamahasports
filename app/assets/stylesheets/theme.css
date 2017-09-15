@@ -647,10 +647,8 @@ ul.uk-nav-sub{
 }
 .sidebar-area .widget-title {
   font-size: 16px;
-  line-height: 1;
   text-transform: uppercase;
   text-align: center;
-  margin-top: -38px;
   margin-bottom: 30px;
 }
 .sidebar-area .widget-title span {
@@ -658,10 +656,9 @@ ul.uk-nav-sub{
   background: #fff;
 }
 .sidebar-area .widget {
-  margin-top: 6px;
+  margin-top: 5px;
   margin-bottom: 46px;
   border: 1px solid #e6e6e6;
-  padding: 30px;
 }
 .sidebar-area .widget > *:not(.widget-title):first-child {
   margin-top: -6px;
@@ -4343,7 +4340,7 @@ footer.uk-light a {
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 0px;
-    top: -30px;
+    top: -114px;
     padding-bottom: 110px;
   }
   .uk-section.tw-splitpage-section>.uk-container{
@@ -4806,8 +4803,9 @@ footer.uk-light a {
 /* Shop Style */
 .tw-onhover {
   overflow: hidden;
+  border: 1px solid rgba(158, 155, 155, 0.59)!important;
   position: relative;
-  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.62);
+  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.62)!important;
 }
 .tw-onhover:before{
   position: absolute;
@@ -4869,8 +4867,10 @@ footer.uk-light a {
   margin-right: 10px;
 }
 .shop-content .shop-image-container {
-  box-shadow: 4px 4px 4px #888888;
+  box-shadow: 2px 2px 12px rgba(136, 136, 136, 0.69)!important;
+  border-radius: 3px;
   margin-bottom: 25px;
+  border: 1px solid rgba(216, 216, 216, 0.59)!important;
 }
 .shop-content h4{
   margin-bottom: 5px;
