@@ -14,4 +14,8 @@ class StaticController < ApplicationController
   def financiacion
 
   end
+
+  def catal1
+
+  end
 end

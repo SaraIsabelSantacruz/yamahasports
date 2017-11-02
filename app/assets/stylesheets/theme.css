@@ -535,9 +535,9 @@ ul.uk-nav-sub{
   display: none;
   position: absolute;
   top: 100%;
-  left: -67px;
+  left: -252px;
   padding: 18px 0;
-  width: 973px;
+  width: 1112px;
   min-width: 220px;
   background-color: #151515;
   box-sizing: border-box;
@@ -794,7 +794,7 @@ ul.uk-nav-sub{
 }
 
 /* TW Instagram Carousel */
-.tw-carousel-instagram .owl-item{
+.tw-carousel-instagram {
     overflow: hidden;
 }
 .tw-carousel-instagram .owl-item:before{
@@ -1523,6 +1523,11 @@ div.entry-tags{
 .tw-slider-on-header .owl-theme .owl-dots {
   bottom: 98px;
 }
+
+.own-container-carousel .owl-theme .owl-dots{
+  bottom: 0px!important;
+}
+
 .owl-theme {
   display: block;
 }
@@ -4872,16 +4877,20 @@ footer.uk-light a {
   margin-bottom: 25px;
   border: 1px solid rgba(216, 216, 216, 0.59)!important;
 }
+
 .shop-content h4{
   margin-bottom: 5px;
 }
+
 .shop-content .shop-title{
   letter-spacing: 0;
   color: #151515;
 }
+
 .shop-content .shop-title:hover{
   color: #999;
 }
+
 .shop-content .shop-category{
   display: block;
   font-size: 10px;
@@ -4904,6 +4913,7 @@ footer.uk-light a {
     -webkit-animation: twAnimHide .7s ease both;
             animation: twAnimHide .7s ease both;
 }
+
 @-webkit-keyframes twAnimHide {
     from { }
     to { opacity: 0; }
@@ -5367,6 +5377,7 @@ footer.uk-light a {
 .thumbs.owl-carousel.owl-theme .owl-stage {
   height: 590px;
 }
+
 .thumbs.owl-carousel.owl-theme .owl-item {
   height: 132px;
   width: 100px !important;
@@ -5388,15 +5399,48 @@ footer.uk-light a {
 .thumbs.owl-carousel.owl-theme .owl-item.active.current {
   border-color: #151515;
 }
+
 .thumbs.owl-carousel.owl-theme .owl-item img {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translate(0,-50%);
-  transform: translate3d(0,-50%,0);
-  margin: 0 auto;
-  cursor: pointer;
+  width:auto;
+ 	max-height: 100%;
+  max-width: 100%;
+	margin:0 auto;
+	position:relative;
+  transform:translate(0px, -50%);
+	top:50%;
+}
+
+.own-catalogo .owl-carousel .owl-item{
+    height: 700px;
+}
+
+.own-contacto .slider-item{
+  height: 586px!important;
+}
+.own-cont-cita{
+  height: 400px;
+}
+
+.own-container-slide .owl-carousel .owl-item{
+  height: 700px;
+}
+
+.own-container-carousel .owl-carousel .owl-item{
+  height: 330px;
+}
+
+.owl-carousel .owl-item {
+  height: 590px;
+}
+
+.owl-carousel .owl-item img{
+  width:auto;
+  max-height: 100%;
+  max-width: 100%;
+  margin:0 auto;
+  position:relative;
+  transform:translate(0px, -50%);
+  top:50%;
 }
 
 /* Shop Single */
@@ -5465,10 +5509,12 @@ footer.uk-light a {
   display: inline-block;
   content: "\f2fc";
 }
+
 .rating > .half:before {
   content: "\f2fc";
   position: absolute;
 }
+
 .rating > label {
   cursor: pointer;
   color: #ddd;
@@ -5618,26 +5664,38 @@ footer.uk-light a {
   width: 100%;
   height: 245px;
   display: flex;
-  margin: 5px;
+  margin: 30px 0px;
 }
 
 .desc{
-  width: 30%;
+  width: 40%;
   height: 100%;
   margin: 0 10px;
 }
 
 .img-desc{
-  width: 67%;
-  height: 100%;
-  background-repeat:no-repeat;
-  background-size:cover;
-  border-radius: 5px;
+  height: 245px;
+    width: 60%;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 0px 10px;
+}
+
+.img-desc img{
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  float: right;
+  position: relative;
+  transform: translate(0px, -50%);
+  top: 50%;
 }
 
 .name-moto{
   text-align: left;
-  height: 38px;
+  height: 80px;
   width: 100%;
   vertical-align: middle;
   margin: 0 auto;
@@ -5662,6 +5720,22 @@ footer.uk-light a {
   margin-bottom: 15px;
   margin-top: 15px;
   border-right: 1px solid grey;
+  height: 128px;
+}
+
+.img-port img{
+  width:auto;
+ 	max-height: 100%;
+  max-width: 100%;
+	margin:0 auto;
+	position:relative;
+  transform:translate(0px, -50%);
+	top:50%;
+}
+
+.img-port a{
+  height: 128px;
+  width: 128px;
 }
 
 .no-item-has-children{
@@ -5735,4 +5809,23 @@ footer.uk-light a {
 
 .tw-main-menu .sub-menu .menu-item-has-children:after {
     content: none;
+}
+
+.shop-image-container img{
+  width:auto;
+ 	max-height: 100%;
+  max-width: 100%;
+	margin:0 auto;
+	position:relative;
+  transform:translate(0px, -50%);
+	top:50%;
+}
+
+.own-image-container img {
+    transform: none!important;
+    top: 0% !important;
+}
+
+.first{
+  margin-top: 20px;
 }
