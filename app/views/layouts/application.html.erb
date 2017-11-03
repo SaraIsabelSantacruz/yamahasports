@@ -39,7 +39,7 @@
               <a href="/">Home</a>
             </li>
 
-            <li class="menu-item menu-item-has-children">
+            <li class="menu-item menu-item-has-children own-itm-children">
               <a href="#">Motocicletas Nuevas</a>
               <ul class="sub-menu uk-animation-fade" style="background: #fff; padding:0px; box-shadow: 2px 2px 12px grey;">
                 <div class="uk-nav nav-port">
@@ -88,7 +88,7 @@
 
                 <div class="banner-port" id="ban1">
                   <div class="desc">
-                    <a  id="auto" href="/catal1" style="font-size:15px; background:#d13c3c;" class="catMotos"  data-url="automaticas">Autmáticas y Semiautomáticas</a>
+                    <a id="auto" data-url="automaticas" href="/catal1" style="font-size:15px; background:#d13c3c;" class="catMotos">Autmáticas y Semiautomáticas</a>
                     <div class="name-moto">
                       <h3 style="color:#fff; margin-left: 26px;">Nombre</h3>
                     </div>
@@ -105,7 +105,7 @@
                 </div>
 
                 <div class="banner-port" id="ban2" style="display:none;">
-                  <div class="desc">
+                  <div  class="desc">
                     <a id="urbana" href="/catal1" style="font-size:15px; background: #d13c3c;" class="catMotos" data-url="urbanas">Urbanas-trabajo</a>
                     <div class="name-moto">
                       <h3 style="color:#fff; margin-left: 26px;">Nombre</h3>
@@ -224,19 +224,19 @@
                     </div>
                     <ul style="list-style: circle;">
                       <li class="list-acc">
-                        <a href="/catalogo" class="acc-ropa">Ropa1</a>
+                        <a href="/catal1" class="acc-ropa">Ropa1</a>
                       </li>
                       <li class="list-acc">
-                        <a href="/catalogo" class="acc-ropa">Ropa2</a>
+                        <a href="/catal1" class="acc-ropa">Ropa2</a>
                       </li>
                       <li class="list-acc">
-                        <a href="/catalogo" class="acc-ropa">Ropa3</a>
+                        <a href="/catal1" class="acc-ropa">Ropa3</a>
                       </li>
                       <li class="list-acc">
-                        <a href="/catalogo" class="acc-ropa">Ropa4</a>
+                        <a href="/catal1" class="acc-ropa">Ropa4</a>
                       </li>
                       <li class="list-acc">
-                        <a href="/catalogo" class="acc-ropa">Ropa5</a>
+                        <a href="/catal1" class="acc-ropa">Ropa5</a>
                       </li>
                     </ul>
                   </li>
@@ -248,19 +248,19 @@
 
                     <ul style="list-style: circle;">
                       <li class="list-acc2">
-                        <a href="/catalogo" class="acc-ropa">Casco1</a>
+                        <a href="/catal1" class="acc-ropa">Casco1</a>
                       </li>
                       <li class="list-acc2">
-                        <a href="/catalogo" class="acc-ropa">Casco2</a>
+                        <a href="/catal1" class="acc-ropa">Casco2</a>
                       </li>
                       <li class="list-acc2">
-                        <a href="/catalogo" class="acc-ropa">Casco3</a>
+                        <a href="/catal1" class="acc-ropa">Casco3</a>
                       </li>
                       <li class="list-acc2">
-                        <a href="/catalogo" class="acc-ropa">Casco4</a>
+                        <a href="/catal1" class="acc-ropa">Casco4</a>
                       </li>
                       <li class="list-acc2">
-                        <a href="/catalogo" class="acc-ropa">Casco5</a>
+                        <a href="/catal1" class="acc-ropa">Casco5</a>
                       </li>
                     </ul>
                   </li>
@@ -272,19 +272,19 @@
 
                     <ul style="list-style: circle;">
                       <li class="list-acc3">
-                        <a href="/catalogo" class="acc-ropa">Accesorio1</a>
+                        <a href="/catal1" class="acc-ropa">Accesorio1</a>
                       </li>
                       <li class="list-acc3">
-                        <a href="/catalogo" class="acc-ropa">Accesorio2</a>
+                        <a href="/catal1" class="acc-ropa">Accesorio2</a>
                       </li>
                       <li class="list-acc3">
-                        <a href="/catalogo" class="acc-ropa">Accesorio3</a>
+                        <a href="/catal1" class="acc-ropa">Accesorio3</a>
                       </li>
                       <li class="list-acc3">
-                        <a href="/catalogo" class="acc-ropa">Accesorio4</a>
+                        <a href="/catal1" class="acc-ropa">Accesorio4</a>
                       </li>
                       <li class="list-acc3">
-                        <a href="/catalogo" class="acc-ropa">Accesorio5</a>
+                        <a href="/catal1" class="acc-ropa">Accesorio5</a>
                       </li>
                     </ul>
                   </li>
@@ -321,11 +321,11 @@
 
             </div>
           </div>
-          <div class="tw-header-meta">
-            <a class="mobile-menu uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #mobile-menu-modal"><i class="ion-navicon-round"></i></a>
-          </div>
         </div>
 
+        <div class="tw-header-meta" style="z-index: 1000; right: 33px; position: absolute;">
+          <a class="mobile-menu uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #mobile-menu-modal" style="color: #fff;"><i class="ion-navicon-round" style="font-size: 70px;"></i></a>
+        </div>
         <div id="mobile-menu-modal" class="uk-modal-full" data-uk-modal>
           <div class="uk-modal-dialog">
             <button class="uk-modal-close-full" type="button" data-uk-close></button>
@@ -337,15 +337,13 @@
                 <li class="uk-parent">
                   <a href="#">Motocicletas Nuevas</a>
                   <ul class="uk-nav-sub">
-                    <li><a href="pages-about.html">Automática y Semiautomática</a></li>
-                    <li><a href="pages-services.html">Urbanas trabajo y Deportivas</a></li>
-                    <li><a href="pages-team.html">Todo Terreno</a></li>
-                    <li><a href="pages-clients.html">Deportivas</a></li>
-                    <li><a href="pages-contact.html">Super Deportivas</a></li>
-                    <li><a href="pages-404.html">Sport Heritage</a></li>
-                    <li><a href="pages-faq.html">Turismo</a></li>
-                    <li><a href="pages-coming-soon.html">Motocross y Enduro</a></li>
-                    <li><a href="pages-coming-soon.html">Cuatrimotos</a></li>
+                    <li><a class="auto1" data-url="automaticas" href="/catal1">Automática y Semiautomática</a></li>
+                    <li><a class="urbana1" data-url="urbanas" href="/catal1">Urbanas trabajo y Deportivas</a></li>
+                    <li><a class="todo1" data-url="todo-terreno" href="/catal1">Todo Terreno</a></li>
+                    <li><a class="deportivas1" data-url="deportivas" href="/catal1">Deportivas</a></li>
+                    <li><a class="super1" data-url="super" href="/catal1">Super Deportivas</a></li>
+                    <li><a class="sport1" data-url="sport" href="/catal1">Sport Heritage</a></li>
+                    <li><a class="cuatri1" data-url="cuatri" href="/catal1">Cuatrimotos</a></li>
                   </ul>
                 </li>
                 <li class="uk-parent">

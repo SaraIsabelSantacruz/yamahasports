@@ -27,11 +27,19 @@
     {{/each}}
     ​</script>
 
+    <script id="title-template" type="x-handlebars-template">​
+      {{#each this}}​
+        <h1 class="tw-page-title uk-text-uppercase uk-text-center uk-flex uk-flex-middle uk-flex-center" style="padding-top:50vh; margin-top: 0px;">{{title}}</h1>
+      {{/each}}
+    </script>
+
   <section class="tw-slider tw-slider-fullscreen uk-light own-catalogo">
     <div class="owl-carousel owl-theme">
       <div class="slider-item" data-overlay="0.4" style="background-color: #151515; background-image: url(/demo/shop/shop-bg1.jpg);">
         <div class="tw-page-title-container tw-element">
-          <h1 class="tw-page-title uk-text-uppercase uk-text-center uk-flex uk-flex-middle uk-flex-center" style="padding-top:50vh; margin-top: 0px;">Catálogo</h1>
+          <div class="addTitle">
+
+          </div>
         </div>
       </div>
     </div>
@@ -59,23 +67,23 @@
                 </h3>
                 <ul>
                   <li class="cat-item cat-item-2 current-cat">
-                    <a href="catal1">Autmáticas y Semiautomáticas</a>(18)</li>
+                    <a class="auto1" href="catal1">Autmáticas y Semiautomáticas</a>(18)</li>
                   <li class="cat-item cat-item-7">
-                    <a href="catal2">Urbanas trabajo y Deportivas</a>(16)</li>
+                    <a class="urbana1" href="catal1">Urbanas trabajo y Deportivas</a>(16)</li>
                   <li class="cat-item cat-item-9">
-                    <a href="catal3">Todo Terreno</a>
+                    <a class="todo1" href="catal1">Todo Terreno</a>
                     (13)</li>
                   <li class="cat-item cat-item-8">
-                    <a href="catal4">Deportivas</a>
+                    <a class="deportivas1" href="catal1">Deportivas</a>
                     (14)</li>
                   <li class="cat-item cat-item-9">
-                    <a href="catal5">Súper Deportivas</a>
+                    <a class="super1" href="catal1">Súper Deportivas</a>
                     (13)</li>
                   <li class="cat-item cat-item-8">
-                    <a href="catal6">Sport Heritage</a>
+                    <a class="sport1" href="catal1">Sport Heritage</a>
                     (14)</li>
                   <li class="cat-item cat-item-2 current-cat">
-                    <a href="catal7">Cuatrimotos</a>(18)</li>
+                    <a class="cuatri1" href="catal1">Cuatrimotos</a>(18)</li>
                 </ul>
               </aside>
             </div>

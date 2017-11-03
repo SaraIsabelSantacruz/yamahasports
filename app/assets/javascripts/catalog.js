@@ -1,41 +1,42 @@
-$(window).on('load', function () {
-  console.log("estoy cargando");
-    "use strict";
+"use strict";
+$(function() {
 
-    $("#auto").click(function() {
-      var url = $('#auto').attr('data-url');
-      localStorage.setItem("catalog_site", url);
-     });
+  $(".auto1").click(function() {
+    var url = $('#auto').data('url');
+    localStorage.setItem("catalog_site", url);
+    console.log("estoy haciendo hover");
+   });
 
-    $("#urbana").click(function() {
-      var url = $('#urbana').attr('data-url');
-      localStorage.setItem("catalog_site", url);
-    });
+  $(".urbana1").click(function() {
+    var url = $('#urbana').data('url');
+    localStorage.setItem("catalog_site", url);
+  });
 
-    $("#todo_terreno").click(function() {
-      var url = $('#todo_terreno').attr('data-url');
-      localStorage.setItem("catalog_site", url);
-     });
+  $(".todo_terreno1").click(function() {
+    var url = $('#todo_terreno').data('url');
+    localStorage.setItem("catalog_site", url);
+   });
 
-    $("#deportivas").click(function() {
-      var url = $('#deportivas').attr('data-url');
-      localStorage.setItem("catalog_site", url);
-    });
+  $(".deportivas1").click(function() {
+    var url = $('#deportivas').attr('data-url');
+    localStorage.setItem("catalog_site", url);
+  });
 
-    $("#super").click(function() {
-      var url = $('#super').attr('data-url');
-      localStorage.setItem("catalog_site", url);
-     });
+  $(".super1").click(function() {
+    var url = $('#super').attr('data-url');
+    localStorage.setItem("catalog_site", url);
+   });
 
-    $("#sport").click(function() {
-      var url = $('#sport').attr('data-url');
-      localStorage.setItem("catalog_site", url);
-    });
+  $(".sport1").click(function() {
+    var url = $('#sport').attr('data-url');
+    localStorage.setItem("catalog_site", url);
+  });
 
-    $("#cuatri").click(function() {
-      var url = $('#cuatri').attr('data-url');
-      localStorage.setItem("catalog_site", url);
-     });
+  $(".cuatri1").click(function() {
+    var url = $('#cuatri').attr('data-url');
+    localStorage.setItem("catalog_site", url);
+   });
+
 
      var aValue = localStorage.getItem("catalog_site");
      console.log(aValue);
@@ -49,6 +50,11 @@ $(window).on('load', function () {
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
        $(".cont-templeate").append (theTemplate(motoData));
+
+       var title=[{title:"AUTOMÁTICAS"}];
+       var theTitleTemplate = $("#title-template").html();
+       var theTitle = Handlebars.compile(theTitleTemplate);
+       $(".addTitle").append(theTitle(title));
      }
 
      else if(aValue == "urbanas"){
@@ -60,6 +66,11 @@ $(window).on('load', function () {
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
        $(".cont-templeate").append (theTemplate(motoData));
+
+       var title=[{title:"URBANAS"}];
+       var theTitleTemplate = $("#title-template").html();
+       var theTitle = Handlebars.compile(theTitleTemplate);
+       $(".addTitle").append(theTitle(title));
      }
 
      else if(aValue == "todo_terreno"){
@@ -69,6 +80,11 @@ $(window).on('load', function () {
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
        $(".cont-templeate").append (theTemplate(motoData));
+
+       var title=[{title:"TODO TERRENO"}];
+       var theTitleTemplate = $("#title-template").html();
+       var theTitle = Handlebars.compile(theTitleTemplate);
+       $(".addTitle").append(theTitle(title));
      }
 
      else if(aValue == "deportivas"){
@@ -81,6 +97,11 @@ $(window).on('load', function () {
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
        $(".cont-templeate").append (theTemplate(motoData));
+
+       var title=[{title:"DEPORTIVAS"}];
+       var theTitleTemplate = $("#title-template").html();
+       var theTitle = Handlebars.compile(theTitleTemplate);
+       $(".addTitle").append(theTitle(title));
      }
 
      else if(aValue == "super"){
@@ -92,6 +113,11 @@ $(window).on('load', function () {
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
        $(".cont-templeate").append (theTemplate(motoData));
+
+       var title=[{title:"SÚPER DEPORTIVAS"}];
+       var theTitleTemplate = $("#title-template").html();
+       var theTitle = Handlebars.compile(theTitleTemplate);
+       $(".addTitle").append(theTitle(title));
      }
 
      else if(aValue == "sport"){
@@ -102,6 +128,11 @@ $(window).on('load', function () {
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
        $(".cont-templeate").append (theTemplate(motoData));
+
+       var title=[{title:"SPORT HERITAGE"}];
+       var theTitleTemplate = $("#title-template").html();
+       var theTitle = Handlebars.compile(theTitleTemplate);
+       $(".addTitle").append(theTitle(title));
      }
 
      else if(aValue == "cuatri"){
@@ -116,6 +147,11 @@ $(window).on('load', function () {
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
        $(".cont-templeate").append (theTemplate(motoData));
+
+       var title=[{title:"CUATRIMOTOS"}];
+       var theTitleTemplate = $("#title-template").html();
+       var theTitle = Handlebars.compile(theTitleTemplate);
+       $(".addTitle").append(theTitle(title));
      }
 
      $(".add-to-cart").click(function() {

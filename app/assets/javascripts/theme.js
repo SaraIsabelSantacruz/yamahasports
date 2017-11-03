@@ -14,8 +14,84 @@ $(window).on('load', function () {
       $(".foto-acc").attr('src', '/acc3.gif');
     });
 
+    $(".own-itm-children" ).hover(function() {
+      var url = $('#auto').attr('data-url');
+      localStorage.setItem("catalog_site", "one");
+    });
 
-    $(".a1").click(function() {
+    $(".auto1").click(function() {
+      var url = $('#auto').data('url');
+      localStorage.setItem("catalog_site", url);
+      console.log("estoy haciendo hover");
+     });
+
+    $(".urbana1").click(function() {
+      var url = $('#urbana').data('url');
+      localStorage.setItem("catalog_site", url);
+    });
+
+    $(".todo1").click(function() {
+      var url = $('#todo_terreno').data('url');
+      localStorage.setItem("catalog_site", url);
+     });
+
+    $(".deportivas1").click(function() {
+      var url = $('#deportivas').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+    });
+
+    $(".super1").click(function() {
+      var url = $('#super').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+     });
+
+    $(".sport1").click(function() {
+      var url = $('#sport').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+    });
+
+    $(".cuatri1").click(function() {
+      var url = $('#cuatri').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+     });
+
+    $("#auto").hover(function() {
+      var url = $('#auto').data('url');
+      localStorage.setItem("catalog_site", url);
+      console.log("estoy haciendo hover");
+     });
+
+    $("#urbana").hover(function() {
+      var url = $('#urbana').data('url');
+      localStorage.setItem("catalog_site", url);
+    });
+
+    $("#todo_terreno").hover(function() {
+      var url = $('#todo_terreno').data('url');
+      localStorage.setItem("catalog_site", url);
+     });
+
+    $("#deportivas").hover(function() {
+      var url = $('#deportivas').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+    });
+
+    $("#super").hover(function() {
+      var url = $('#super').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+     });
+
+    $("#sport").hover(function() {
+      var url = $('#sport').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+    });
+
+    $("#cuatri").hover(function() {
+      var url = $('#cuatri').attr('data-url');
+      localStorage.setItem("catalog_site", url);
+     });
+
+    $(".a1").hover(function() {
         $("#ban2").hide();
         $("#ban3").hide();
         $("#ban4").hide();
@@ -25,7 +101,7 @@ $(window).on('load', function () {
         $("#ban1").fadeIn(500);
      });
 
-     $(".a2").click(function() {
+     $(".a2").hover(function() {
          $("#ban1").hide();
          $("#ban3").hide();
          $("#ban4").hide();
@@ -35,7 +111,7 @@ $(window).on('load', function () {
          $("#ban2").fadeIn(500);
       });
 
-      $(".a3").click(function() {
+      $(".a3").hover(function() {
           $("#ban1").hide();
           $("#ban2").hide();
           $("#ban4").hide();
@@ -45,7 +121,7 @@ $(window).on('load', function () {
           $("#ban3").fadeIn(500);
        });
 
-       $(".a4").click(function() {
+       $(".a4").hover(function() {
            $("#ban1").hide();
            $("#ban2").hide();
            $("#ban3").hide();
@@ -55,7 +131,7 @@ $(window).on('load', function () {
            $("#ban4").fadeIn(500);
         });
 
-        $(".a5").click(function() {
+        $(".a5").hover(function() {
             $("#ban1").hide();
             $("#ban2").hide();
             $("#ban3").hide();
@@ -65,7 +141,7 @@ $(window).on('load', function () {
             $("#ban5").fadeIn(500);
          });
 
-         $(".a6").click(function() {
+         $(".a6").hover(function() {
              $("#ban1").hide();
              $("#ban2").hide();
              $("#ban3").hide();
@@ -75,7 +151,7 @@ $(window).on('load', function () {
              $("#ban6").fadeIn(500);
           });
 
-          $(".a7").click(function() {
+          $(".a7").hover(function() {
               $("#ban1").hide();
               $("#ban2").hide();
               $("#ban3").hide();
