@@ -1,14 +1,48 @@
-<%= stylesheet_link_tag 'bootstrap.min'%>
+<script id="big-template" type="x-handlebars-template">​
+  {{#each this}}​
+    <div class="item cont-img {{state}}" style="margin: 20px;">
+      <img src="{{urlBig}}" alt="">
+    </div>
+  {{/each}}
+</script>
 
 <script id="small-template" type="x-handlebars-template">​
   {{#each this}}​
-    <img src="{{urlSmall}}" alt="">
-  {{/each}}  ​
+    <li data-target="#carousel-sara" data-slide-to="{{slide}}" class="active own-list-dot">
+      <img src="{{urlSmall}}" alt="">
+    </li>
+  {{/each}}
 </script>
 
-<script id="big-template" type="x-handlebars-template">​
+<script id="big" type="x-handlebars-template">​
   {{#each this}}​
-    <img src="{{urlBig}}" alt="">
+    <div class="item cont-img {{state}}" style="margin: 20px;">
+      <img src="{{Big}}" alt="">
+    </div>
+  {{/each}}
+</script>
+
+<script id="small" type="x-handlebars-template">​
+  {{#each this}}​
+    <li data-target="#carousel-sara-two" data-slide-to="{{slide}}" class="active own-list-dot">
+      <img src="{{Small}}" alt="">
+    </li>
+  {{/each}}
+</script>
+
+<script id="bigBlack" type="x-handlebars-template">​
+  {{#each this}}​
+    <div class="item cont-img {{state}}" style="margin: 20px;">
+      <img src="{{Big}}" alt="">
+    </div>
+  {{/each}}
+</script>
+
+<script id="smallBlack" type="x-handlebars-template">​
+  {{#each this}}​
+    <li data-target="#carousel-sara-black" data-slide-to="{{slide}}" class="active own-list-dot">
+      <img src="{{Small}}" alt="">
+    </li>
   {{/each}}
 </script>
 
@@ -19,202 +53,315 @@
 </script>
 
 <div class="">
-  <section class="tw-slider tw-slider-fullscreen uk-light" style=" height:152px; background: #404040;"></section>
+  <section class="tw-slider tw-slider-fullscreen uk-light" style=" height:170px; background: #404040;"></section>
 
-  <section class="uk-section uk-section-shop" style="padding-bottom:0px!important;">
-    <div class="container">
-
-      <div class="uk-grid-collapse" data-uk-grid>
-        <div class="uk-width-single image-slide-area">
-          <div class="addSmall thumbs owl-carousel owl-theme"></div>
-        </div>
-        <div class="uk-width-expand">
-          <div class="addBig uk-margin-left big-images onhover owl-carousel owl-theme" style="box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.51);" id="big"></div>
+<section class="uk-section uk-section-shop" style="padding-bottom:0px!important;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="addName">
         </div>
       </div>
-
-      <div class="row" style="margin: 30px;">
-        <div class="col-xs-6">
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:430px; margin:0 auto;">
+            <div class="carousel-inner addBig" role="listbox">
+              <!-- Handlebars -->
+            </div>
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev" style="height: 80%;">
+                <i class="fa fa-long-arrow-left" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next" style="height: 80%;">
+                <i class="fa fa-long-arrow-right" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+              </a>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
           <div class="entry-shop uk-margin-medium-bottom">
-            <div class="addName">
-
-            </div>
-            <div style="color: rgba(216, 58, 58, 0.72); font-size:40px;" class="shop-price">Precio</div>
-            <p class="uk-margin-medium-bottom">
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra per inceptos himenaeos mauris in erat justo nullam ac sed odio sit amet tincidunt auctor ornare odio sed non mauris urna felis dapibus condimentum sit amet augue sed non. Eque elit
-              sed ut imperdiet velit nam nec tellus tincidunt auctor ornare odio sed nonero fermentu feugiat velit mauris egestas quam ut aliquam massa nisl quis neque.
-            </p>
+            <div style="color: #000; font-size:33px; margin:20px 0px;" class="shop-price">Especificaciones Técnicas Generales</div>
+            <ul class="own-list" style="font-size:20px;">
+              <li style="margin: 10px 0px;">Cilindraje: 124 cc</li>
+              <li style="margin: 10px 0px;">Peso (Con aceite y tanque de gasolina lleno): 118 kg</li>
+              <li style="margin: 10px 0px;">Tipo de motor:4 Tiempos SOHC, refrigerado por aire</li>
+              <li style="margin: 10px 0px;">Arranque: Eléctrico y a pedal</li>
+              <li style="margin: 10px 0px;">Encendido: CDI</li>
+              <li style="margin: 10px 0px;">Ruedas delantera: 80/90-21MC 48P</li>
+              <li style="margin: 10px 0px;">Ruedas trasera: 110/80-18M/C 58P</li>
+              <li style="margin: 10px 0px;">Freno delantero - trasero: Disco- Tambor</li>
+            </ul>
           </div>
         </div>
-        <div class="col-xs-6" style="margin-top: 100px;">
-          <a href="shop-cart.html" class="uk-button uk-button-default uk-margin-left tw-hover" style="border-color: transparent; background: #d83a3a; color: #fff; margin-left: 0px!important;">
-            <span class="tw-hover-inner">
-              <span>Ficha Técnica</span>
-              <i class="ion-ios-arrow-thin-right"></i>
-            </span>
-          </a>
-          <hr>
-          <div class="shop-meta uk-grid-xsmall uk-margin-medium-bottom" data-uk-grid>
-            <div class="uk-width-1-2 uk-width-1-5@s">
-              <span class="meta-head uk-text-uppercase">Sku</span>
-            </div>
-            <div class="uk-width-1-2 uk-width-4-5@s">
-              <div class="meta-content">036958</div>
-            </div>
-            <div class="uk-width-1-2 uk-width-1-5@s">
-              <span class="meta-head uk-text-uppercase">Categoria</span>
-            </div>
-            <div class="uk-width-1-2 uk-width-4-5@s">
-              <div class="meta-content">Categoría, Moto</div>
-            </div>
-          </div>
+    </div>
+    <div class="row" style="width: 80%; margin: auto; padding: 27px 0px; border-top:1px solid red; border-bottom:1px solid red;">
+      <div class="col-xs-12 col-sm-6">
+        <p style="font-size: 22px; color: grey; margin-bottom: 0px;">Modelo 2018</p>
+        <div class="" style="display:inline-block;">
+          <h1 style="float:left; margin:0px;">$6.290.000</h1><h4 style="float: right; margin: 17px 0px; font-size: 18px; color: grey;">/ IVA incluido</h4>
         </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <p style="font-size: 22px; color: grey; margin-bottom: 0px;">Con tarjeta de crédito Yamaha*</p>
+        <div class="" style="display:inline-block;">
+          <h1 style="float:left; margin:0px;">$6.124.200</h1><h4 style="float: right; margin: 17px 0px; font-size: 18px; color: grey;">/ IVA incluido</h4>
+        </div>
+      </div>
+      <div class="col-xs-12">
+        <p>Precio sujeto a modicaciones sin previo aviso. *El descuento de la
+          tarjeta de crédito Yamaha será del 2% y se aplicará sobre el valor pagado
+          únicamente con la tarjeta de crédito, excluyendo
+          valores en efectivo o con otros medios de pago. </p>
       </div>
     </div>
-
-    <div class="uk-container own-container-carousel">
-      <div class="tw-element tw-heading uk-text-center">
-        <h3>Productos Destacados</h3>
-      </div>
-
-      <!-- ******************** Carousel ***************************** -->
-      <div class="tw-element tw-carousel-shop">
-        <div class="owl-carousel owl-theme" data-uk-scrollspy="target:.shop-item; cls:uk-animation-slide-bottom-medium; delay: 350;">
-
-          <div class="shop-item">
-            <div class="shop-content">
-              <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
-                <img alt="Backpack In Black" src="/demo/shop/product1.jpg">
-                <div class="uk-position-bottom">
-                  <a href="/detalle" class="add-to-cart">Ver Detalle</a>
-                </div>
-              </div>
-              <h4>
-                <a href="shop-single.html" class="shop-title">Backpack In Black</a>
-              </h4>
-              <a class="shop-category">Accessories</a>
-              <div class="price">
-                <span class="old-price">$26.00</span>
-                <span class="new-price">$28.00</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="shop-item">
-            <div class="shop-content">
-              <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
-                <img alt="Backpack In Black" src="/demo/shop/product2.jpg">
-                <div class="uk-position-bottom">
-                  <a href="/detalle" class="add-to-cart">Ver Detalle</a>
-                </div>
-              </div>
-              <h4>
-                <a href="shop-single.html" class="shop-title">BOSS Orange T-Shirt</a>
-              </h4>
-              <a class="shop-category">Clothing, Man</a>
-              <div class="price">
-                <span class="new-price">$40.00</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="shop-item">
-            <div class="shop-content">
-              <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
-                <img alt="Backpack In Black" src="/demo/shop/product3.jpg">
-                <div class="uk-position-bottom">
-                  <a href="/detalle" class="add-to-cart">Ver Detalle</a>
-                </div>
-              </div>
-              <h4>
-                <a href="shop-single.html" class="shop-title">Military Backpack</a>
-              </h4>
-              <a class="shop-category">Accessories</a>
-              <div class="price">
-                <span class="new-price">$36.00</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="shop-item">
-            <div class="shop-content">
-              <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
-                <img alt="Backpack In Black" src="/demo/shop/product4.jpg">
-                <div class="uk-position-bottom">
-                  <a href="/detalle" class="add-to-cart">Ver Detalle</a>
-                </div>
-              </div>
-              <h4>
-                <a href="shop-single.html" class="shop-title">Industry T-Shirt</a>
-              </h4>
-              <a class="shop-category">Clothing, Man</a>
-              <div class="price">
-                <span class="old-price">$30.00</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="shop-item">
-            <div class="shop-content">
-              <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
-                <img alt="Backpack In Black" src="/demo/shop/product1.jpg">
-                <div class="uk-position-bottom">
-                  <a href="/detalle" class="add-to-cart">Ver Detalle</a>
-                </div>
-              </div>
-              <h4>
-                <a href="shop-single.html" class="shop-title">Backpack In Black</a>
-              </h4>
-              <a class="shop-category">Accessories</a>
-              <div class="price">
-                <span class="old-price">$25.00</span>
-                <span class="new-price">$16.00</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="shop-item">
-            <div class="shop-content">
-              <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
-                <img alt="Backpack In Black" src="/demo/shop/product2.jpg">
-                <div class="uk-position-bottom">
-                  <a href="/detalle" class="add-to-cart">Ver Detalle</a>
-                </div>
-              </div>
-              <h4>
-                <a href="shop-single.html" class="shop-title">Backpack In Black</a>
-              </h4>
-              <a class="shop-category">Accessories</a>
-              <div class="price">
-                <span class="old-price">$25.00</span>
-                <span class="new-price">$16.00</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="shop-item">
-            <div class="shop-content">
-              <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
-                <img alt="Backpack In Black" src="/demo/shop/product3.jpg">
-                <div class="uk-position-bottom">
-                  <a href="/detalle" class="add-to-cart">Ver Detalle</a>
-                </div>
-              </div>
-              <h4>
-                <a href="shop-single.html" class="shop-title">Backpack In Black</a>
-              </h4>
-              <a class="shop-category">Accessories</a>
-              <div class="price">
-                <span class="old-price">$25.00</span>
-                <span class="new-price">$16.00</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    <div class="" style="width: 80%; margin: auto;">
+      <span class="socialShare"></span>
     </div>
+  </div>
   </section>
+
+  <div class="" style="position: relative; top: -55px;">
+
+    <div id="carousel-sara" class="carousel slide" data-ride="carousel" style="width:50%; margin:0 auto;">
+      <div class="carousel-inner addBig" role="listbox">
+      </div>
+      <a class="left carousel-control" href="#carousel-sara" role="button" data-slide="prev" style="top: 20%;">
+        <i class="fa fa-long-arrow-left" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+      </a>
+      <a class="right carousel-control" href="#carousel-sara" role="button" data-slide="next" style="top: 20%;">
+        <i class="fa fa-long-arrow-right" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+      </a>
+    </div>
+
+    <div id="carousel-sara-two" class="carousel slide" data-ride="carousel" style="width:50%; margin:0 auto;">
+      <div class="carousel-inner big" role="listbox">
+      </div>
+      <a class="left carousel-control" href="#carousel-sara-two" role="button" data-slide="prev" style="top: 20%;">
+        <i class="fa fa-long-arrow-left" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+      </a>
+      <a class="right carousel-control" href="#carousel-sara-two" role="button" data-slide="next" style="top: 20%;">
+        <i class="fa fa-long-arrow-right" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+      </a>
+    </div>
+
+    <div id="carousel-sara-black" class="carousel slide" data-ride="carousel" style="width:50%; margin:0 auto;">
+      <div class="carousel-inner bigBlack" role="listbox">
+      </div>
+      <a class="left carousel-control" href="#carousel-sara-black" role="button" data-slide="prev" style="top: 20%;">
+        <i class="fa fa-long-arrow-left" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+      </a>
+      <a class="right carousel-control" href="#carousel-sara-black" role="button" data-slide="next" style="top: 20%;">
+        <i class="fa fa-long-arrow-right" aria-hidden="true" style="position: absolute; top: 50%; color: #ce0e0e; font-size: 40px;"></i>
+      </a>
+    </div>
+
+        <div class="selec-color" style=" width: 50%; height:3px; border-top: 1px solid black; margin:20px auto; padding: 8px 0px; display: flex;">
+          <p id="blanca" class="active">Blanca</p>
+          <p id="azul" style="border-left: 1px solid black; border-right: 1px solid black;">Azul</p>
+          <p id="negra">Negra</p>
+        </div>
+
+    <ol class="carousel-indicators addSmall" style="position: relative; width: 100%; margin: auto; left: 0%; bottom:0px;">
+    </ol>
+    <ol class="carousel-indicators small" style="position: relative; width: 100%; margin: auto; left: 0%; bottom:0px;">
+    </ol>
+    <ol class="carousel-indicators smallBlack" style="position: relative; width: 100%; margin: auto; left: 0%; bottom:0px;">
+    </ol>
+  </div>
+
+  <div class="container" style="    padding-right: 65px;
+    padding-left: 65px;">
+
+    <div class="text">
+      <h1>¿Quieres adquirirla?</h1>
+      <p style="font-size: 20px;
+    padding: 10px; color:grey;">Envíanos tus datos y recibe una completa asesoría sobre la Yamaha de tus sueños y el proceso de compra</p>
+    </div>
+    <div class="tw-contact-form tw-element uk-text-center" style="border-top:1px solid red;">
+      <form action="/send_finan" method="get" class="tw-form-style-3 uk-grid-small" data-uk-grid data-uk-scrollspy="target: > div; cls:uk-animation-scale-up; delay: 350;">
+        <div class="uk-width-1-1">
+          <input id="author" name="author" placeholder="Nombre *" type="text" value="" size="30" aria-required="true">
+        </div>
+        <div class="uk-width-1-2 uk-width-1-1@xxs">
+          <input id="email" name="email" placeholder="Correo Electrónico *" type="text" value="" size="30" aria-required="true">
+        </div>
+        <div class="uk-width-1-2 uk-width-1-1@xxs">
+          <input id="phone" name="phone" placeholder="Teléfono *" type="number" value="" size="20" aria-required="true">
+        </div>
+        <div class="uk-width-1-2 uk-width-1-1@xxs">
+          <input id="ciudad" name="ciudad" placeholder="Ciudad *" type="text" value="" size="20" aria-required="true">
+        </div>
+        <div class="uk-width-1-2 uk-width-1-1@xxs">
+          <input id="departamento" name="departamento" placeholder="Departamento *" type="text" value="" size="20" aria-required="true">
+        </div>
+
+        <div class="submit uk-width-1-1" style="padding-top: 20px;">
+          <input name="submit" type="submit" id="submit" class="submit" value="¡La quiero comprar!" style="border-radius: 0px; float: left;
+          padding: 0px 5px;
+          width: 18%;
+          height: 57px;
+          font-weight: 900;
+          margin: 20px;
+          border: none;
+          font-size: 11px;
+          background: #0063A3;">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="uk-container own-container-carousel">
+    <div class="tw-element tw-heading uk-text-center">
+      <h3>Productos Destacados</h3>
+    </div>
+
+    <!-- ******************** Carousel ***************************** -->
+    <div class="tw-element tw-carousel-shop">
+      <div class="owl-carousel owl-theme" data-uk-scrollspy="target:.shop-item; cls:uk-animation-slide-bottom-medium; delay: 350;">
+
+        <div class="shop-item">
+          <div class="shop-content">
+            <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
+              <img alt="Backpack In Black" src="/demo/shop/product1.jpg">
+              <div class="uk-position-bottom">
+                <a href="/detalle" class="add-to-cart">Ver Detalle</a>
+              </div>
+            </div>
+            <h4>
+              <a href="shop-single.html" class="shop-title">Backpack In Black</a>
+            </h4>
+            <a class="shop-category">Accessories</a>
+            <div class="price">
+              <span class="old-price">$26.00</span>
+              <span class="new-price">$28.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-content">
+            <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
+              <img alt="Backpack In Black" src="/demo/shop/product2.jpg">
+              <div class="uk-position-bottom">
+                <a href="/detalle" class="add-to-cart">Ver Detalle</a>
+              </div>
+            </div>
+            <h4>
+              <a href="shop-single.html" class="shop-title">BOSS Orange T-Shirt</a>
+            </h4>
+            <a class="shop-category">Clothing, Man</a>
+            <div class="price">
+              <span class="new-price">$40.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-content">
+            <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
+              <img alt="Backpack In Black" src="/demo/shop/product3.jpg">
+              <div class="uk-position-bottom">
+                <a href="/detalle" class="add-to-cart">Ver Detalle</a>
+              </div>
+            </div>
+            <h4>
+              <a href="shop-single.html" class="shop-title">Military Backpack</a>
+            </h4>
+            <a class="shop-category">Accessories</a>
+            <div class="price">
+              <span class="new-price">$36.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-content">
+            <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
+              <img alt="Backpack In Black" src="/demo/shop/product4.jpg">
+              <div class="uk-position-bottom">
+                <a href="/detalle" class="add-to-cart">Ver Detalle</a>
+              </div>
+            </div>
+            <h4>
+              <a href="shop-single.html" class="shop-title">Industry T-Shirt</a>
+            </h4>
+            <a class="shop-category">Clothing, Man</a>
+            <div class="price">
+              <span class="old-price">$30.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-content">
+            <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
+              <img alt="Backpack In Black" src="/demo/shop/product1.jpg">
+              <div class="uk-position-bottom">
+                <a href="/detalle" class="add-to-cart">Ver Detalle</a>
+              </div>
+            </div>
+            <h4>
+              <a href="shop-single.html" class="shop-title">Backpack In Black</a>
+            </h4>
+            <a class="shop-category">Accessories</a>
+            <div class="price">
+              <span class="old-price">$25.00</span>
+              <span class="new-price">$16.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-content">
+            <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
+              <img alt="Backpack In Black" src="/demo/shop/product2.jpg">
+              <div class="uk-position-bottom">
+                <a href="/detalle" class="add-to-cart">Ver Detalle</a>
+              </div>
+            </div>
+            <h4>
+              <a href="shop-single.html" class="shop-title">Backpack In Black</a>
+            </h4>
+            <a class="shop-category">Accessories</a>
+            <div class="price">
+              <span class="old-price">$25.00</span>
+              <span class="new-price">$16.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <div class="shop-content">
+            <div class="shop-image-container uk-inline tw-onhover visible own-image-container">
+              <img alt="Backpack In Black" src="/demo/shop/product3.jpg">
+              <div class="uk-position-bottom">
+                <a href="/detalle" class="add-to-cart">Ver Detalle</a>
+              </div>
+            </div>
+            <h4>
+              <a href="shop-single.html" class="shop-title">Backpack In Black</a>
+            </h4>
+            <a class="shop-category">Accessories</a>
+            <div class="price">
+              <span class="old-price">$25.00</span>
+              <span class="new-price">$16.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script type="text/javascript">
+$('.owl-carousel-sara').owlCarousel({
+        items:1,
+        loop:false,
+        center:true,
+        margin:0,
+        URLhashListener:true,
+        autoplayHoverPause:true,
+        startPosition: 'URLHash'
+    });
+</script>
+
 <%=javascript_include_tag "detalle"%>
-<%=javascript_include_tag "bootstrap.min"%>

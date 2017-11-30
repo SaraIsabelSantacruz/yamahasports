@@ -1,39 +1,38 @@
 "use strict";
 $(function() {
 
-  $(".auto1").click(function() {
-    var url = $('#auto').data('url');
-    localStorage.setItem("catalog_site", url);
-    console.log("estoy haciendo hover");
-   });
-
-  $(".urbana1").click(function() {
-    var url = $('#urbana').data('url');
-    localStorage.setItem("catalog_site", url);
-  });
-
-  $(".todo_terreno1").click(function() {
-    var url = $('#todo_terreno').data('url');
+  $(".cat1").click(function() {
+    var url = $('#cat1').data('url');
     localStorage.setItem("catalog_site", url);
    });
 
-  $(".deportivas1").click(function() {
-    var url = $('#deportivas').attr('data-url');
+  $(".cat2").click(function() {
+    var url = $('#cat2').data('url');
     localStorage.setItem("catalog_site", url);
   });
 
-  $(".super1").click(function() {
-    var url = $('#super').attr('data-url');
+  $(".cat3").click(function() {
+    var url = $('.cat3').data('url');
     localStorage.setItem("catalog_site", url);
    });
 
-  $(".sport1").click(function() {
-    var url = $('#sport').attr('data-url');
+  $(".cat4").click(function() {
+    var url = $('.cat4').attr('data-url');
     localStorage.setItem("catalog_site", url);
   });
 
-  $(".cuatri1").click(function() {
-    var url = $('#cuatri').attr('data-url');
+  $(".cat5").click(function() {
+    var url = $('.cat5').attr('data-url');
+    localStorage.setItem("catalog_site", url);
+   });
+
+  $(".cat6").click(function() {
+    var url = $('.cat6').attr('data-url');
+    localStorage.setItem("catalog_site", url);
+  });
+
+  $(".cat7").click(function() {
+    var url = $('.cat7').attr('data-url');
     localStorage.setItem("catalog_site", url);
    });
 
@@ -157,5 +156,6 @@ $(function() {
      $(".add-to-cart").click(function() {
        var urlDetalle = $(this).attr('data-url');
        localStorage.setItem("data-detalle", urlDetalle);
+       localStorage.setItem("data-color", "blanco");
       });
 });

@@ -8,9 +8,4 @@ Rails.application.routes.draw do
   get '/send_finan', to: 'forms#finan'
   get '/catal1', to: 'static#catal1'
   get '/catal2', to: 'static#catal2'
-  get '/catal3', to: 'static#catal3'
-  get '/catal4', to: 'static#catal4'
-  get '/catal5', to: 'static#catal5'
-  get '/catal6', to: 'static#catal6'
-  get '/catal7', to: 'static#catal7'
 end

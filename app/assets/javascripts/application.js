@@ -19,5 +19,7 @@
 //= require uikit-icons.min
 //= require isotope.pkgd.min
 //= require owl.carousel.min
+//= require bootstrap.min
 //= require theme
+//= require plugin
 //= require handlebars-v4.0.11

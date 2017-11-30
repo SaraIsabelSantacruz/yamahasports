@@ -14,7 +14,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 /*------------------------------------------------------------------
 
 [Table of contents]
-
+ensa
 1. Base / Typography / Body / Links forms
 2. Header & Logo
 3. Elements
@@ -26,6 +26,92 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 -------------------------------------------------------------------*/
 
 /* Base CSS */
+
+.font{
+  font-family: "BebasNeue";
+  src: asset-url("fonts/BebasNeue.otf");
+}
+
+.own.first{
+  margin-top: 20px;
+}
+
+#blanca.active{
+  color: red;
+}
+
+.carousel-control{
+  height: 50%;
+}
+
+.selec-color p{
+  font-size: 17px;
+  padding: 0px 20px;
+  color: #000;
+}
+
+.own-list-dot{
+  padding: 15px;
+  width: 150px!important;
+  height: 150px!important;
+  margin: 0!important;
+  display: inline-flex!important;
+}
+
+.own-list-dot img{
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+
+}
+
+.own-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.own-list li {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+
+.own-list li::before {
+  content: "• ";
+  color: red; /* or whatever color you prefer */
+}
+
+.carousel-caption{
+  right: 0%!important;
+  left: 0%!important;
+  font-size: 27px;
+  bottom: 259px!important;
+  color: #d93a3a!important;
+  text-align: left!important;
+}
+
+.carousel-control.right {
+  background-image:  linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%)!important;
+}
+
+.carousel-control.left {
+  background-image:  linear-gradient(to right,rgba(255, 255, 255, 0) 0,rgba(255, 255, 255, 0) 100%)!important;
+}
+.cont-img {
+  height: 370px;
+}
+
+.cont-img img{
+  width:auto;
+ 	max-height: 100%;
+  max-width: 100%;
+	margin:0 auto;
+	position:relative;
+	transform:translate(0px, -50%);
+	top:50%;
+}
+
 body {
   display: block;
   font-family:'Roboto';
@@ -254,12 +340,12 @@ blockquote:after {
   color: #151515;
 }
 .tw-header {
-  border-bottom: 1px solid #e6e6e6;
+  /*border-bottom: 1px solid #e6e6e6;*/
   background-color: #fff;
 }
 .tw-header,
 .uk-navbar-toggle{
-  height: 150px;
+  height: 115px;
   box-sizing: border-box;
 }
 .tw-header.tw-header-transparent {
@@ -374,7 +460,7 @@ blockquote:after {
   transform: none;
   -webkit-transform: none;
   left: 121px;
-  top: -20px;
+  top: 0px;
 }
 .tw-header .uk-navbar-left,
 .tw-header .uk-navbar-right {
@@ -384,8 +470,7 @@ blockquote:after {
 }
 .tw-header .uk-navbar-left {
   z-index: 10;
-  top: -10px;
-  left: 30px;
+  left: 80px;
 }
 .tw-header .uk-navbar-right {
   right: 33px;
@@ -528,6 +613,7 @@ ul.uk-nav-sub{
 .tw-main-menu .menu-item-has-children:hover > .sub-menu {
   display: block;
 }
+
 .tw-main-menu .menu-item {
   position: relative;
 }
@@ -537,7 +623,7 @@ ul.uk-nav-sub{
   top: 100%;
   left: -252px;
   padding: 18px 0;
-  width: 1112px;
+  width: 902px;
   min-width: 220px;
   background-color: #151515;
   box-sizing: border-box;
@@ -4347,7 +4433,7 @@ footer.uk-light a {
 @media (min-width: 960px) {
   .uk-section {
     padding-top: 0px;
-    top: -114px;
+    top: -110px;
     padding-bottom: 110px;
   }
   .uk-section.tw-splitpage-section>.uk-container{
@@ -5664,26 +5750,22 @@ footer.uk-light a {
 
 .banner-port{
   width: 100%;
-  height: 245px;
-  display: flex;
-  margin: 30px 0px;
+height: 212px;
+background: #ad0000;
+display: flex;
+margin: 0px;
 }
 
 .desc{
   width: 40%;
-  height: 100%;
-  margin: 0 10px;
+  margin: 0px;
   z-index: 1000;
+  margin-top: 20px;
+  background: black;
 }
 
 .img-desc{
-  height: 245px;
-    width: 60%;
-    float: right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 5px;
-    margin: 0px 10px;
+  height: 168px;
 }
 
 .img-desc img{
@@ -5698,11 +5780,11 @@ footer.uk-light a {
 
 .name-moto{
   text-align: left;
-  height: 80px;
+  height: 285px;
   width: 100%;
   vertical-align: middle;
   margin: 0 auto;
-  background: #d23c3c;
+  background: #333333;
   padding-top: 10px;
   font-weight: 400;
   margin: 5px 0;
@@ -5719,11 +5801,11 @@ footer.uk-light a {
 }
 
 .img-port{
-  padding: 15px;
+/*  padding: 15px; */
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 9px;
   border-right: 1px solid grey;
-  height: 128px;
+  height: 114px;
 }
 
 .img-port img{

@@ -19,6 +19,8 @@
  *= require jquery.fullpage
  *= require animations
  *= require theme
+ *= require bootstrap.min
+ *= require plugin
  *= require responsive
  *= require_self
  */

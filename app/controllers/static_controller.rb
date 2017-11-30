@@ -18,4 +18,8 @@ class StaticController < ApplicationController
   def catal1
 
   end
+
+  def catal2
+
+  end
 end
