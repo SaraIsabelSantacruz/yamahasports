@@ -27,9 +27,13 @@ ensa
 
 /* Base CSS */
 
-.font{
+@font-face {
   font-family: "BebasNeue";
-  src: asset-url("fonts/BebasNeue.otf");
+  src: url(/fonts/BebasNeue.otf) format("truetype");
+}
+
+*{
+  font-family: "BebasNeue"!important;
 }
 
 .own.first{
