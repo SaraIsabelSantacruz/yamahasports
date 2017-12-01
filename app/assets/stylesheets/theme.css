@@ -27,10 +27,10 @@ ensa
 
 /* Base CSS */
 
-.font{
+/*.font{
   font-family: "BebasNeue";
   src: asset-url("fonts/BebasNeue.otf");
-}
+}*/
 
 .own.first{
   margin-top: 20px;
@@ -5830,7 +5830,6 @@ margin: 0px;
 .nav-port-acc{
   display: flex;
   justify-content: space-around;
-  font-size: 15px;
 }
 
 .title-acc{

@@ -11,6 +11,10 @@ class StaticController < ApplicationController
 
   end
 
+  def detalle2
+
+  end
+
   def financiacion
 
   end

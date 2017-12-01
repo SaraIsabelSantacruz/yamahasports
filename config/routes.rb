@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: 'static#home'
   get '/catalogo', to: 'static#catalogo'
   get '/detalle', to: 'static#detalle'
+  get '/detalle2', to: 'static#detalle2'
   get '/financiacion', to: 'static#financiacion'
   get '/citas', to: 'static#citas'
   get '/contacto', to: 'static#contacto'
