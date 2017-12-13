@@ -16,42 +16,42 @@ $(window).on('load', function () {
 
     $(".own-itm-children" ).hover(function() {
       var url = $('#auto').attr('data-url');
-      localStorage.setItem("catalog_site", "one");
+      localStorage.setItem("catalog_site", "automaticas");
     });
 
     $(".auto1").click(function() {
-      var url = $('#auto').data('url');
+      var url = $('#cat1').data('url');
       localStorage.setItem("catalog_site", url);
       console.log("estoy haciendo hover");
      });
 
     $(".urbana1").click(function() {
-      var url = $('#urbana').data('url');
+      var url = $('#cat2').data('url');
       localStorage.setItem("catalog_site", url);
     });
 
     $(".todo1").click(function() {
-      var url = $('#todo_terreno').data('url');
+      var url = $('#cat3').data('url');
       localStorage.setItem("catalog_site", url);
      });
 
     $(".deportivas1").click(function() {
-      var url = $('#deportivas').attr('data-url');
+      var url = $('#cat4').attr('data-url');
       localStorage.setItem("catalog_site", url);
     });
 
     $(".super1").click(function() {
-      var url = $('#super').attr('data-url');
+      var url = $('#cat5').attr('data-url');
       localStorage.setItem("catalog_site", url);
      });
 
     $(".sport1").click(function() {
-      var url = $('#sport').attr('data-url');
+      var url = $('#cat6').attr('data-url');
       localStorage.setItem("catalog_site", url);
     });
 
     $(".cuatri1").click(function() {
-      var url = $('#cuatri').attr('data-url');
+      var url = $('#cat7').attr('data-url');
       localStorage.setItem("catalog_site", url);
      });
 

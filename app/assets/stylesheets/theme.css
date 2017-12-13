@@ -27,10 +27,28 @@ ensa
 
 /* Base CSS */
 
-/*.font{
+.carousel-indicators li{
+  background-color: rgba(0,0,0,0)!important;
+  border: 0px!important;
+}
+
+.socialPlugin .showSocialButtons{
+  letter-spacing: 2px;
+  padding: 10px!important;
+}
+
+@font-face {
   font-family: "BebasNeue";
-  src: asset-url("fonts/BebasNeue.otf");
-}*/
+  src: url(/fonts/BebasNeue.otf) format("truetype");
+}
+
+*{
+  font-family: "BebasNeue"!important;
+}
+
+.fa{
+  font-family: "FontAwesome"!important;
+}
 
 .own.first{
   margin-top: 20px;
@@ -47,7 +65,7 @@ ensa
 .selec-color p{
   font-size: 17px;
   padding: 0px 20px;
-  color: #000;
+  color: #fff;
 }
 
 .own-list-dot{
@@ -588,15 +606,15 @@ ul.uk-nav-sub{
   height: 70px;
   color: rgb(255, 255, 255);
   padding: 0 15px;
-  font-weight: 300;
-  font-size: 18px;
+  font-size: 23px;
+  letter-spacing: 3px;
 }
 
 .tw-main-menu > li > a:hover{
   color: #d10e0e;
 }
 .tw-main-menu > li.menu-item-has-children > a {
-  padding-right: 33px;
+  padding-right: 0px;
 }
 .tw-main-menu > li.menu-item-has-children:after {
   content: '\f3d0';
@@ -757,7 +775,7 @@ ul.uk-nav-sub{
   margin-bottom: 10px;
   border-bottom: 1px solid #e6e6e6;
   color: #151515;
-  font-size: 10px;
+  font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
@@ -4896,9 +4914,9 @@ footer.uk-light a {
 /* Shop Style */
 .tw-onhover {
   overflow: hidden;
-  border: 1px solid rgba(158, 155, 155, 0.59)!important;
+  /*border: 1px solid rgba(158, 155, 155, 0.59)!important;
   position: relative;
-  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.62)!important;
+  box-shadow: 2px 2px 12px rgba(128, 128, 128, 0.62)!important;*/
 }
 .tw-onhover:before{
   position: absolute;
@@ -5514,7 +5532,7 @@ footer.uk-light a {
 }
 
 .own-container-carousel .owl-carousel .owl-item{
-  height: 330px;
+  height: 370px;
 }
 
 .owl-carousel .owl-item {
@@ -5623,9 +5641,9 @@ footer.uk-light a {
   float: right;
   opacity: 0;
 }
-.shop-item:hover .shop-rating-container{
+/*.shop-item:hover .shop-rating-container{
   opacity: 1;
-}
+}*/
 
 /* Shop Cart Table */
 .uk-section-shop .uk-table th{
@@ -5913,3 +5931,73 @@ margin: 0px;
 /*.first{
   margin-top: 20px;
 }*/
+
+.socialPlugin .socials{
+  margin-top: 0px!important;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+
+  .socialPlugin .socials{
+    margin-top: 1px!important;
+  }
+
+  .addTitle{
+    height: 400px!important;
+  }
+
+  .tw-slider{
+    top: -115px;
+  }
+  .own-catalogo .owl-carousel .owl-item{
+    height: 400px;
+  }
+
+  .own-theme{
+    height: 400px!important;
+  }
+  .tw-header .uk-navbar-left{
+    left: 14px;
+  }
+
+  .own-container-slide .owl-carousel .owl-item {
+    height: 400px;
+  }
+
+  .uk-section{
+    /*top: -170px;*/
+  }
+
+  .own-section{
+    top:-520px;
+  }
+
+  #carousel-sara{
+    width: 100%!important;
+  }
+
+  #carousel-sara-two{
+    width: 100%!important;
+  }
+
+  #carousel-sara-black{
+    width: 100%!important;
+  }
+  #carousel-example-generic{
+
+  }
+  .own-cont{
+    padding-right: 15px!important;
+    padding-left: 15px!important;
+  }
+  .own-submit{
+    width: 40%!important;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }

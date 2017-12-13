@@ -1,34 +1,16 @@
-<article>
-    <header class="entry-header">
-        <div class="entry-thumbnail">
+  <div class="col-xs-12 col-sm-6">
+      <div class="single-blog fix" style="margin: 30px;">
+        <div class="blog-image">
+          <a href="<%= post.the_url %>" class="block white-hover">
             <%= raw post.the_link_thumb() if post.has_thumb?%>
+          </a>
         </div>
-        <h1 class="entry-title">
-            <a rel="bookmark" href="<%= post.the_url %>"><%= post.the_title %></a>
-        </h1>
-        <div class="entry-meta">
-                <span class="date">
-                    <a rel="bookmark" title="Enlace permanente a <%= post.the_title %>" href="<%= post.the_url %>">
-                        <time datetime="" class="entry-date"><%= post.the_created_at %></time>
-                    </a>
-                </span>
-                <span class="categories-links">
-                    <%= raw get_taxonomy(post.the_categories.decorate, 'category tag') %>
-                </span>
-                <span class="tags-links">
-                    <%= raw get_taxonomy(post.the_tags.decorate, 'tag') %>
-                </span>
-        </div><!-- .entry-meta -->
-    </header><!-- .entry-header -->
-    <div class="entry-content">
-        <%= raw post.the_content %>
-    </div><!-- .entry-content -->
-    <% if post.the_comments.count > 0 %>
-        <footer class="entry-meta">
-            <div class="comments-link">
-                <a href="<%= post.the_url %>">Ver los comentarios</a>
-            </div><!-- .comments-link -->
-
-        </footer><!-- .entry-meta -->
-    <% end %>
-</article>
+        <div class="single-blog-text" style="margin: 6px;">
+          <h5 style="margin: 25px; font-size: 28px;">
+            <a href="<%= post.the_url %>"><%= post.the_title %></a>
+          </h5>
+          <p style="width:100%;overflow:hidden;height:auto;"><%= post.content_filtered[10..170].html_safe%></p>
+          <a href="<%= post.the_url %>" class="button">Read more</a>
+        </div>
+      </div>
+    </div>

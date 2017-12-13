@@ -1,38 +1,6 @@
 <%= stylesheet_link_tag 'bootstrap.min'%>
 <!-- .main-container close  -->
 <div class="main-container">
-
-  <!-- <script id="shoe-template" type="x-handlebars-template">​
-    {{#each this}}​
-      <div class="col-xs-12 col-md-6 {{class}} own">
-        <div class="shop-item">
-          <div class="shop-content" style="margin-bottom: 20px;">
-            <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px;">
-              <img alt="Backpack In Blac" class="own-img" src="{{url}}">
-              <div class="uk-position-bottom">
-                <a href="/detalle" class="add-to-cart" data-url="{{name}}">Ver Detalle</a>
-              </div>
-            </div>
-            <h4>
-              <a href="shop-single.html" class="shop-title">{{name}}</a>
-            </h4>
-            <a class="shop-category">Accessories</a>
-            <div class="price">
-              <span class="old-price">{{price}}</span>
-              <span class="new-price">{{price}}</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    {{/each}}
-    ​</script>
-
-    <script id="title-template" type="x-handlebars-template">​
-      {{#each this}}​
-        <h1 class="tw-page-title uk-text-uppercase uk-text-center uk-flex uk-flex-middle uk-flex-center" style="padding-top:50vh; margin-top: 0px;">{{title}}</h1>
-      {{/each}}
-    </script> -->
-
   <section class="tw-slider tw-slider-fullscreen uk-light own-catalogo">
     <div class="owl-carousel owl-theme">
       <div class="slider-item" data-overlay="0.4" style="background-color: #151515; background-image: url(/demo/shop/shop-bg1.jpg);">
@@ -48,44 +16,197 @@
   <section class="uk-section uk-section-shop">
     <div class="uk-container">
       <div data-uk-grid>
-        <div class="content-area uk-width-expand">
-          <div class="tw-element tw-shop">
-            <div class="container-fluid" style="padding:0px;">
-              <div class="row">
-                <div class="cont-templeate"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div class="sidebar-area">
           <div class="sidebar-inner" data-uk-sticky="bottom: true;offset: 40">
             <div class="widget-item">
               <aside class="widget widget_categories">
                 <h3 class="widget-title">
-                  <span>Categories</span>
+                  <span>Categoría</span>
                 </h3>
                 <ul>
                   <li class="cat-item cat-item-2 current-cat">
-                    <a class="auto1" href="catal1">Autmáticas y Semiautomáticas</a>(18)</li>
+                    <a class="auto1" href="catal1">Integrales</a></li>
                   <li class="cat-item cat-item-7">
-                    <a class="urbana1" href="catal1">Urbanas trabajo y Deportivas</a>(16)</li>
+                    <a class="urbana1" href="catal1">Modulares</a></li>
                   <li class="cat-item cat-item-9">
-                    <a class="todo1" href="catal1">Todo Terreno</a>
+                    <a class="todo1" href="catal1">Jet</a>
                   </li>
                   <li class="cat-item cat-item-8">
-                    <a class="deportivas1" href="catal1">Deportivas</a>
+                    <a class="deportivas1" href="catal1">Off road</a>
                   </li>
-                  <li class="cat-item cat-item-9">
-                    <a class="super1" href="catal1">Súper Deportivas</a>
-                  </li>
-                  <li class="cat-item cat-item-8">
-                    <a class="sport1" href="catal1">Sport Heritage</a>
-                  </li>
-                  <li class="cat-item cat-item-2 current-cat">
-                    <a class="cuatri1" href="catal1">Cuatrimotos</a>(18)</li>
                 </ul>
               </aside>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-area uk-width-expand">
+          <div class="tw-element tw-shop">
+            <div class="container-fluid" style="padding:0px;">
+              <div class="row">
+                <div class="cont-templeate">
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cont-templeate">
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="cont-templeate">
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-xs-12 col-md-4 own">
+                    <div class="shop-item" style="padding: 20px;">
+                      <div class="shop-content" style="margin-bottom: 20px;">
+                        <div class="shop-image-container uk-inline tw-onhover visible" style="height:280px; width:405px; box-shadow:0px 0px!important; border:0px!important; border-radius: 0px!important;">
+                          <img style="display:block;" alt="Backpack In Blac" class="own-img" src="/images/Fotos_Cascos/casco1.png">
+                          <div class="uk-position-bottom" style="display:none;">
+                            <a href="/detalle2" class="add-to-cart" data-url="casco">Ver Detalle</a>
+                          </div>
+                        </div>
+                        <a href="/detalle2" style="border-bottom: 1px solid gray; font-size: 20px; letter-spacing: 2px; color: #000; text-align: center; margin: 0px; font-weight: 100;" class="shop-category">Nolan negro mate</a>
+                        <div class="price" style="text-align: center; font-size: 25px; margin: 0px;">
+                          <span style="text-decoration: none; color: #000; margin: 0px;" class="old-price">$500.000</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

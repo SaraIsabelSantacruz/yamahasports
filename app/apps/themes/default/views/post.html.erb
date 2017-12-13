@@ -1,4 +1,4 @@
-<article id="post" >
+<!-- <article id="post" >
     <header class="entry-header">
         <% if @post.has_thumb? %>
             <div class="entry-thumbnail">
@@ -6,9 +6,92 @@
             </div>
         <% end %>
         <h1 class="entry-title"><%= @post.the_title %></h1>
-    </header><!-- .entry-header -->
-    <div class="entry-content">
+    </header> -->
+<!-- .entry-header -->
+<!-- <div class="entry-content">
         <%= raw @post.the_content %>
-    </div><!-- .entry-content -->
-</article><!-- #post -->
-<%= render partial: 'partials/comments', locals: {post: @post} if @post.can_commented? %>
+    </div>
+</article>-->
+<!-- #post -->
+<!-- <%= render partial: 'partials/comments', locals: {post: @post} if @post.can_commented? %> -->
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8">
+        <div class="" style="border-right:1px solid gray; padding:30px; height:100%; margin-top: 30px;">
+          <h1 style="border-bottom:1px solid red;"  <h1 class="entry-title"><%= @post.the_title %></h1></h1>
+
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="img-desc" style="height:320px; margin-top: 30px;">
+                <img src="/images/post1.png" alt="" style="float:none; display:block;">
+              </div>
+              <div class="">
+                  <%= raw @post.the_content %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="" style="padding:30px;">
+          <div class="" style="padding: 20px; background: #F2F2F2;">
+            <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Suscríbete</h4>
+            <p style="font-size: 16px; letter-spacing: 1.2px;">
+              a nuestro blog y recibe las actualizaciones en tu correo
+            </p>
+            <form class="" action="index.html" method="post">
+              <div class="uk-width-1-2 uk-width-1-1@xxs" style="width:100%;">
+                <input id="email" name="Email" placeholder="tucorreo@mail.com" type="text" value="" size="30" aria-required="true" style="background:#fff;">
+              </div>
+
+              <div class="submit uk-width-1-1" style="padding-top: 20px; display: inline-block;">
+                <input name="submit" type="submit" id="submit" class="submit" value="¡Quiero suscribirme!" style="font-size: 16px;letter-spacing: 1px;padding: 0 12px; border-radius: 0px; background: #0063A3; float: right;">
+              </div>
+            </form>
+          </div>
+
+          <div class="" style="padding: 20px; background: #F2F2F2; margin:20px 0px;">
+            <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Categorias</h4>
+            <ul style="list-style-type: none; padding: 0px;">
+              <li style="border-bottom:1px solid gray;">Seguridad Vial</li>
+              <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Tecnología Yamaha</li>
+              <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Yamaha Racing</li>
+              <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Consejos para motociclistas</li>
+            </ul>
+          </div>
+
+          <div class="" style="padding: 20px; background: #F2F2F2; margin:20px 0px;">
+            <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Artículos más leídos</h4>
+            <ul style="list-style-type: none; padding: 0px;">
+              <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
+                <div class="img-desc" style="height:40px; float:left">
+                  <img src="/images/post1.png" alt="" style="">
+                </div>
+                <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
+              </li>
+              <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
+                <div class="img-desc" style="height:40px; float:left">
+                  <img src="/images/post1.png" alt="" style="">
+                </div>
+                <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
+              </li>
+              <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
+                <div class="img-desc" style="height:40px; float:left">
+                  <img src="/images/post1.png" alt="" style="">
+                </div>
+                <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
+              </li>
+              <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
+                <div class="img-desc" style="height:40px; float:left">
+                  <img src="/images/post1.png" alt="" style="">
+                </div>
+                <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
