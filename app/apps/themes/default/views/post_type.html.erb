@@ -35,12 +35,12 @@
 
         <div class="" style="padding: 20px; background: #F2F2F2; margin:20px 0px;">
           <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Categorias</h4>
-          
+
           <% if @categories %>
                <%= render partial: "partials/categories_list", locals: {categories: @categories} %>
           <% end %>
-          
-          <!--  
+
+          <!--
           <ul style="list-style-type: none; padding: 0px;">
             <li style="border-bottom:1px solid gray;">Seguridad Vial</li>
             <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Tecnología Yamaha</li>
@@ -57,7 +57,7 @@
             <% @posts.each do |post|%>
                 <% @post = post.decorate%>
                 <div class="row">
-                    <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
+                    <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px; width: 100%;">
                         <div class="img-desc" style="height:40px; float:left">
                         <%= raw @post.the_link_thumb() if @post.has_thumb?%>
                         </div>
