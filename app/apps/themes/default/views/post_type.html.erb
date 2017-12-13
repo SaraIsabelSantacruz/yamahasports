@@ -21,9 +21,9 @@
             a nuestro blog y recibe las actualizaciones
             en tu correo
           </p>
-          <form class="" action="index.html" method="post">
+          <form class="" action="https://formspree.io/saraisabelsantacruz@gmail.com" method="POST">
             <div class="uk-width-1-2 uk-width-1-1@xxs" style="width:100%;">
-              <input id="email" name="Email" placeholder="tucorreo@mail.com" type="text" value="" size="30" aria-required="true"
+              <input id="email" name="email-subscription" placeholder="tucorreo@mail.com" type="email" value="" size="30" aria-required="true"
               style="background:#fff;">
             </div>
 
@@ -35,41 +35,36 @@
 
         <div class="" style="padding: 20px; background: #F2F2F2; margin:20px 0px;">
           <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Categorias</h4>
+          
+          <% if @categories %>
+               <%= render partial: "partials/categories_list", locals: {categories: @categories} %>
+          <% end %>
+          
+          <!--  
           <ul style="list-style-type: none; padding: 0px;">
             <li style="border-bottom:1px solid gray;">Seguridad Vial</li>
             <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Tecnología Yamaha</li>
             <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Yamaha Racing</li>
             <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Consejos para motociclistas</li>
           </ul>
+          -->
         </div>
 
         <div class="" style="padding: 20px; background: #F2F2F2; margin:20px 0px;">
           <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Artículos más leídos</h4>
           <ul style="list-style-type: none; padding: 0px;">
-            <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
-              <div class="img-desc" style="height:40px; float:left">
-                <img src="/images/post1.png" alt="" style="">
-              </div>
-              <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
-            </li>
-            <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
-              <div class="img-desc" style="height:40px; float:left">
-                <img src="/images/post1.png" alt="" style="">
-              </div>
-              <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
-            </li>
-            <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
-              <div class="img-desc" style="height:40px; float:left">
-                <img src="/images/post1.png" alt="" style="">
-              </div>
-              <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
-            </li>
-            <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
-              <div class="img-desc" style="height:40px; float:left">
-                <img src="/images/post1.png" alt="" style="">
-              </div>
-              <span style="float:right; width:75%;">Documentos que debes llevar cuando conduces tu motociclista</span>
-            </li>
+            <% @posts = Cama::Post.last(4)%>
+            <% @posts.each do |post|%>
+                <% @post = post.decorate%>
+                <div class="row">
+                    <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
+                        <div class="img-desc" style="height:40px; float:left">
+                        <%= raw @post.the_link_thumb() if @post.has_thumb?%>
+                        </div>
+                       <a href="<%=@post.the_url %>"> <span style="float:right; width:75%;"><%= @post.the_title %></span></a>
+                    </li>
+                </div>
+            <%end%>
           </ul>
         </div>
       </div>

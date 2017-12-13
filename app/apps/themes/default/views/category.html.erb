@@ -1,14 +1,78 @@
-<article id="category-view" class="category_<%= @category.slug %>">
-    <div class="panel panel-primary post_list no-line">
-        <div class="panel-body">
-            <div class="row">
-                <% @posts.each_with_index do |post, index| %>
-                    <%= raw "<div class='clearfix'></div>" if index%3 == 0 && index > 0 %>
-                    <%= render partial: 'partials/post_list_item', locals: {post: post.decorate} %>
-                <% end %>
-            </div>
-            <%= content_tag("div", raw(ct('no_contents_found', default: 'No contents found')), class: "alert alert-warning") if @posts.empty? %>
-            <%= raw cama_do_pagination(@posts) %>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-8">
+        <div class="main-container">
+          <div class="" style="padding:30px; height:100%; margin-top: 30px;">
+            <% @posts.each_with_index do |post, index| %>
+            <%= raw "<div class='clearfix'></div>" if index%3 == 0 && index > 0 %>
+            <%= render partial: 'partials/post_list_item', locals: {post: post.decorate} %>
+            <% end %>
+          </div>
         </div>
+      </div>
+    <%= content_tag("div", raw(ct('no_contents_found', default: 'No contents found')), class: "alert alert-warning") if @posts.empty? %>
+    <!-- <%= raw cama_do_pagination(@posts) %> -->
+
+    <div class="col-xs-4">
+      <div class="" style="padding: 30px; border-left: 1px solid black; margin-top: 30px;">
+        <div class="" style="padding: 20px; background: #F2F2F2;">
+          <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Suscríbete</h4>
+          <p style="font-size: 16px; letter-spacing: 1.2px;">
+            a nuestro blog y recibe las actualizaciones
+            en tu correo
+          </p>
+          <form class="" action="https://formspree.io/saraisabelsantacruz@gmail.com" method="POST">
+            <div class="uk-width-1-2 uk-width-1-1@xxs" style="width:100%;">
+              <input id="email" name="email-subscription" placeholder="tucorreo@mail.com" type="text" value="" size="30" aria-required="true"
+              style="background:#fff;">
+            </div>
+
+            <div class="submit uk-width-1-1" style="padding-top: 20px; display: inline-block;">
+              <input name="submit" type="submit" id="submit" class="submit" value="¡Quiero suscribirme!" style="font-size: 16px;letter-spacing: 1px;padding: 0 12px; border-radius: 0px; background: #0063A3; float: right;">
+            </div>
+          </form>
+        </div>
+
+        <div class="" style="padding: 20px; background: #F2F2F2; margin:20px 0px;">
+          <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Categorias</h4>
+          
+         
+          <% @categories = current_site.the_full_categories.decorate%>
+          <% if @categories %>
+               <%= render partial: "partials/categories_list", locals: {categories: @categories} %>
+          <% end %>
+          
+          <!--  
+          <ul style="list-style-type: none; padding: 0px;">
+            <li style="border-bottom:1px solid gray;">Seguridad Vial</li>
+            <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Tecnología Yamaha</li>
+            <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Yamaha Racing</li>
+            <li style="border-bottom:1px solid gray; padding:20px 0px 0px;">Consejos para motociclistas</li>
+          </ul>
+          -->
+        </div>
+
+        <div class="" style="padding: 20px; background: #F2F2F2; margin:20px 0px;">
+          <h4 style="color: red; font-size: 20px; letter-spacing: 1px;">Artículos más leídos</h4>
+          <ul style="list-style-type: none; padding: 0px;">
+   
+          
+            <% @posts = Cama::Post.last(4)%>
+            <% @posts.each do |post|%>
+                <% @post = post.decorate%>
+                <div class="row">
+                    <li style="border-bottom:1px solid gray; display:inline-block; padding-bottom:5px;">
+                        <div class="img-desc" style="height:40px; float:left">
+                        <%= raw @post.the_link_thumb() if @post.has_thumb?%>
+                        </div>
+                       <a href="<%=@post.the_url %>"> <span style="float:right; width:75%;"><%= @post.the_title %></span></a>
+                    </li>
+                </div>
+            <% end%>
+       
+          </ul>
+        </div>
+      </div>
     </div>
-</article>
+  </div>
+</div>
