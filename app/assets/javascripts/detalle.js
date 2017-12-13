@@ -900,847 +900,1302 @@ $(window).on('load', function () {
       $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "XTZ 125 Negro") {
+    if (url == "http://localhost:3000/detalle?XTZ%20125") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria1.png", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria2.png", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria3.png", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria4.png", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state: "active", Big_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria1.png"},
+                 {Big_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria2.png"},
+                 {Big_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria3.png"},
+                 {Big_Blanco:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria4.png"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria9.png", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria10.png", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria11.png", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria12.png", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria9.png"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria10.png"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria11.png"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XTZ 125/negro/galeria12.png"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria9.png"},
-                      {urlSmall:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria10.png"},
-                      {urlSmall:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria11.png"},
-                      {urlSmall:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria12.png"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria5.png", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria6.png", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria7.png", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria8.png", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria9.png"},
-                    {urlBig:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria10.png"},
-                    {urlBig:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria11.png"},
-                    {urlBig:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria12.png"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria5.png"},
+                 {Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria6.png"},
+                 {Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria7.png"},
+                 {Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria8.png"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        var text = [{price:199.00, text:"Descripción de moto XTZ 125 Negro"}];
-        var textTemplateScript = $("#text-template").html();
-        var theTextTemplate = Handlebars.compile(textTemplateScript);
-        $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"blanco"},
+                   {color:"negro", NomColor:"negro"},
+                   {color:"azul", NomColor:"azul"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "XT 660R Blanco") {
+    if (url == "http://localhost:3000/detalle?XT%20660R") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356249_2014_yam_xt660r_eu_pws1_stu_007.png", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356251_2014_yam_xt660r_eu_pws1_stu_006.png", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356252_2014_yam_xt660r_eu_pws1_stu_001.png", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356253_2014_yam_xt660r_eu_pws1_stu_002.png", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state: "active", Big_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356249_2014_yam_xt660r_eu_pws1_stu_007.png"},
+                 {Big_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356251_2014_yam_xt660r_eu_pws1_stu_006.png"},
+                 {Big_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356252_2014_yam_xt660r_eu_pws1_stu_001.png"},
+                 {Big_Blanco:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356253_2014_yam_xt660r_eu_pws1_stu_002.png"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356249_2014_yam_xt660r_eu_pws1_stu_007.jpg"},
-                      {urlSmall:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356251_2014_yam_xt660r_eu_pws1_stu_006.jpg"},
-                      {urlSmall:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356252_2014_yam_xt660r_eu_pws1_stu_001.jpg"},
-                      {urlSmall:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356253_2014_yam_xt660r_eu_pws1_stu_002.jpg"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria5.png", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria6.png", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria7.png", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria8.png", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356249_2014_yam_xt660r_eu_pws1_stu_007.jpg"},
-                    {urlBig:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356251_2014_yam_xt660r_eu_pws1_stu_006.jpg"},
-                    {urlBig:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356252_2014_yam_xt660r_eu_pws1_stu_001.jpg"},
-                    {urlBig:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356253_2014_yam_xt660r_eu_pws1_stu_002.jpg"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria5.png"},
+                 {Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria6.png"},
+                 {Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria7.png"},
+                 {Big_Azul:"/images/Fotos Motos/todo-terreno/XTZ 125/azul/galeria8.png"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        var text = [{price:199.00, text:"Descripción de moto XT 660R Blanco"}];
-        var textTemplateScript = $("#text-template").html();
-        var theTextTemplate = Handlebars.compile(textTemplateScript);
-        $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"blanco"},
+                   {color:"negro", NomColor:"negro"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "MT 10 Azul") {
+    if (url == "http://localhost:3000/detalle?MT%2003") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0282.png", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0288.png", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0296.png", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0303.png", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state: "active", Big_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0282.png"},
+                 {Big_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0288.png"},
+                 {Big_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0296.png"},
+                 {Big_Blanco:"/images/Fotos Motos/deportivas/MT 03/gris/9C2A0303.png"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0149946.png"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0272745.png"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0387470.png"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0149946.png"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0149946.png"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0272745.png"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0387470.png"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0149946.png"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto MT 10 Azul"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"gris"},
+                   {color:"azul", NomColor:"azul"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "MT 09 Azul") {
+    if (url == "http://localhost:3000/detalle?YZ%20125") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_001_03.jpeg", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_002_03.jpeg", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_006_03.jpeg", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_007_03.jpeg", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_001_03.jpeg", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_002_03.jpeg", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_006_03.jpeg", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_007_03.jpeg", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul3.png"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul2.png"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul.png"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul3.png"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul3.png"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul2.png"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul.png"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul3.png"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto MT 09 Azul"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"azul"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
+
     }
 
-    if (detalleValue == "MT 09 Tracer Verde") {
+    if (url == "http://localhost:3000/detalle?R1") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_002_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_001_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_002_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_001_03.jpg"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_002_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_001_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_002_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_001_03.jpg"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto MT 09 Tracer Verde"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"rojo"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "MT 07 Blanco") {
+    if (url == "http://localhost:3000/detalle?R1M") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00740571.png", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00818189.png", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00959911.png", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_01072745.png", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00740571.png", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00818189.png", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00959911.png", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_01072745.png", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_005_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_001_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_002_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_005_03.jpg"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_005_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_001_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_002_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_005_03.jpg"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        var text = [{price:199.00, text:"Descripción de moto MT 07 Blanco"}];
-        var textTemplateScript = $("#text-template").html();
-        var theTextTemplate = Handlebars.compile(textTemplateScript);
-        $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"azul"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "MT 03 Gris") {
+    if (url == "http://localhost:3000/detalle?R3") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul001.png", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul002.png", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul003.png", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul004.png", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul001.png", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul002.png", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul003.png", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul004.png", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/deportivas/MT03/9C2A0282.jpeg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT03/9C2A0301.jpeg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT03/9C2A0307.jpeg"},
-                      {urlSmall:"/images/Fotos Motos/deportivas/MT03/9C2A0290.jpeg"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/deportivas/MT03/9C2A0282.jpeg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT03/9C2A0301.jpeg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT03/9C2A0307.jpeg"},
-                    {urlBig:"/images/Fotos Motos/deportivas/MT03/9C2A0290.jpeg"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0262.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0274.png"},
+                 {Big_Azul:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0275.png"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto MT 03 Gris"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11966.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11968.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11973.png"},
+                 {Big_Verde:"/images/Fotos Motos/urbanas/SZ-RR/verde/SZRR NEGRA VERDE11977.png"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-010.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-012.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-017.png"},
+                 {Big_Rojo:"/images/Fotos Motos/urbanas/FAZER 2.0 FI/gris-rojo/FAZER ROJA Y GRIS-018.png"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"azul"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "R1 Rojo") {
+    if (url == "http://localhost:3000/detalle?R15") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul001.png", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto R1 Rojo"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"azul"},
+                   {color:"rojo", NomColor:"rojo"},
+                   {color:"verde", NomColor:"verde"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "R1M Gris Azul") {
+    if (url == "http://localhost:3000/detalle?XSR%20900%20Azul") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_001_03.jpg", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_002_03.jpg", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_005_03.jpg", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_001_03.jpg", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
+
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_001_03.jpg", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_002_03.jpg", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_005_03.jpg", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_001_03.jpg", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00740571.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00818189.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00959911.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_01072745.png"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00740571.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00818189.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_00959911.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_01072745.png"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto R1M Gris Azul"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"azul"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "R3 Azul") {
+    if (url == "http://localhost:3000/detalle?SCR%20950%20Rojo%20Gris") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
+
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul004.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul002.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul003.png"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul001.png"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul004.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul002.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul003.png"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul001.png"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto R3 azul"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"rojo-gris"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "R15 Negro Gris Verde") {
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+    if (url == "http://localhost:3000/detalle?Bolt%20Negro") {
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0113397.png", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0214703.png", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0113397.png", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0113397.png", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
+
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0113397.png", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0214703.png", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0113397.png", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/Sport Heritage/Bolt/sstbboltnegra0113397.png", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
-                      {urlSmall:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
-                    {urlBig:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto R15 Negro Gris Verde"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"negro"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "XSR 900 Azul") {
+    if (url == "http://localhost:3000/detalle?Viking") {
 
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (1).jpeg", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (2).jpeg", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (3).jpeg", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (4).jpeg", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (1).jpeg", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (2).jpeg", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (3).jpeg", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/cuatrimotos/viking VI camo/Viking VI camuflado 2016 (4).jpeg", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_374728_2014_yam_yxm700_eu_lgb_stu_001.png", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_376936_2014_yam_yxm700_eu_lgb_stu_006.png", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_376938_2014_yam_yxm700_eu_lgb_stu_008.png", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_374728_2014_yam_yxm700_eu_lgb_stu_001.png", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_005_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_001_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_002_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_005_03.jpg"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_005_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_001_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_002_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/Sport Heritage/XSR900 azul/2017_YAM_XS850_EU_NBM4_STU_005_03.jpg"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto XSR 900 Azul"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"camo"},
+                   {color:"negro", NomColor:"gris"}
+    ];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
-    if (detalleValue == "SCR 950 Rojo Gris") {
-      //************MOTOS AZUL ****************//
-      var small = [ {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg", slide:"0"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg", slide:"1"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg", slide:"2"},
-                    {Small:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", slide:"3"}];
-      var smallTemplate = $("#small").html();
-      var theSmallTemplate = Handlebars.compile(smallTemplate);
-      $(".small").append (theSmallTemplate(small));
+    if (url == "http://localhost:3000/detalle?Grizzly%20700%20Rojo") {
 
-      var big =[ {state: "active", Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_001.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_002.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_006.jpg"},
-                 {Big:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg"}];
-      var bigTemplate = $("#big").html();
-      var theBigTemplate = Handlebars.compile(bigTemplate);
-      $(".big").append (theBigTemplate(big));
+      //************MOTOS BLANCAS****************//
+      var small_blanca =[{Small_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"0"},
+                    {Small_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"1"},
+                    {Small_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"2"},
+                    {Small_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"3"}];
+      var smallTemplateBlanca = $("#small-blanco").html();
+      var theSmallTemplateBlanca = Handlebars.compile(smallTemplateBlanca);
+      $(".small-blanco").append (theSmallTemplateBlanca(small_blanca));
+
+      var big_blanca =[{state:"active", Big_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"0"},
+                    {Big_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"1"},
+                    {Big_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"2"},
+                    {Big_Blanco:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_001.jpg", slide:"3"}];
+      var bigTemplateBlanca = $("#big-blanco").html();
+      var theBigTemplateBlanca = Handlebars.compile(bigTemplateBlanca);
+      $(".big-blanco").append (theBigTemplateBlanca(big_blanca));
 
       //************MOTOS NEGRA ****************//
-      var smallB = [{Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png", slide:"0"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png", slide:"1"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png", slide:"2"},
-                    {Small:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", slide:"3"}];
-      var smallBlackTemplate = $("#smallBlack").html();
-      var theSmallTemplateBlack = Handlebars.compile(smallBlackTemplate);
-      $(".smallBlack").append (theSmallTemplateBlack(smallB));
+      var small_negra = [{Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_374728_2014_yam_yxm700_eu_lgb_stu_001.png", slide:"0"},
+                    {Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_376936_2014_yam_yxm700_eu_lgb_stu_006.png", slide:"1"},
+                    {Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_376938_2014_yam_yxm700_eu_lgb_stu_008.png", slide:"2"},
+                    {Small_Negro:"/images/Fotos Motos/cuatrimotos/viking-gris/yamaha_374728_2014_yam_yxm700_eu_lgb_stu_001.png", slide:"3"}];
+      var smallTemplateNegra = $("#small-negro").html();
+      var theSmallTemplateNegra = Handlebars.compile(smallTemplateNegra);
+      $(".small-negro").append (theSmallTemplateNegra(small_negra));
 
-      var bigB =[ {state: "active", Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr105gallery48950.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr106gallery47362.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr107gallery83434.png"},
-                 {Big:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png"}];
-      var bigBlackTemplate = $("#bigBlack").html();
-      var theBigTemplateBlack= Handlebars.compile(bigBlackTemplate);
-      $(".bigBlack").append (theBigTemplateBlack(bigB));
+      var big_negra =[{state: "active", Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357077_2014_yam_xt660r_eu_yb_stu_007.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357078_2014_yam_xt660r_eu_yb_stu_006.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357079_2014_yam_xt660r_eu_yb_stu_001.jpeg"},
+                 {Big_Negro:"/images/Fotos Motos/todo-terreno/XT 660R/negro/yamaha_357080_2014_yam_xt660r_eu_yb_stu_002.jpeg"}];
+      var bigTemplateNegra = $("#big-negro").html();
+      var theBigTemplateNegra = Handlebars.compile(bigTemplateNegra);
+      $(".big-negro").append (theBigTemplateNegra(big_negra));
 
-        //************MOTOS****************//
-        var smallP = [{urlSmall:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg"},
-                      {urlSmall:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg"}];
-        var smallTemplateScript = $("#small-template").html();
-        var theSmallTemplate = Handlebars.compile(smallTemplateScript);
-        $(".addSmall").append (theSmallTemplate(smallP));
+      //************MOTOS AZUL****************//
+      var small_azul =[{Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"0"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"1"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"2"},
+                    {Small_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg", slide:"3"}];
+      var smallTemplateAzul = $("#small-azul").html();
+      var theSmallTemplateAzul = Handlebars.compile(smallTemplateAzul);
+      $(".small-azul").append (theSmallTemplateAzul(small_azul));
 
-        var bigP = [{state: "active", urlBig:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_001_03.jpg"},
-                    {urlBig:"/images/Fotos Motos/Sport Heritage/SCR950/2017_YAM_XVS950XR-A_EU_VRC1_STU_005_03.jpg"}];
-        var bigTemplateScript = $("#big-template").html();
-        var theBigTemplate = Handlebars.compile(bigTemplateScript);
-        $(".addBig").append (theBigTemplate(bigP));
+      var big_azul =[{state: "active", Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"},
+                 {Big_Azul:"/images/Fotos Motos/super-deportivas/R15/R15 azul/R15_Azul-gris.jpg"}];
+      var bigTemplateAzul = $("#big-azul").html();
+      var theBigTemplateAzul = Handlebars.compile(bigTemplateAzul);
+      $(".big-azul").append (theBigTemplateAzul(big_azul));
 
-        //************TEXTO****************//
-        var name = [{name:detalleValue}];
-        var nameTemplateScript = $("#name-template").html();
-        var theNameTemplate = Handlebars.compile(nameTemplateScript);
-        $(".addName").append (theNameTemplate(name));
+      //************MOTOS VERDE****************//
+      var small_verde =[{Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"0"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"1"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"2"},
+                    {Small_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg", slide:"3"}];
+      var smallTemplateVerde = $("#small-verde").html();
+      var theSmallTemplateVerde = Handlebars.compile(smallTemplateVerde);
+      $(".small-verde").append (theSmallTemplateVerde(small_verde));
 
-        // var text = [{price:199.00, text:"Descripción de moto SCR 950 Rojo Gris"}];
-        // var textTemplateScript = $("#text-template").html();
-        // var theTextTemplate = Handlebars.compile(textTemplateScript);
-        // $(".addText").append (theTextTemplate(text));
+      var big_verde =[{state: "active", Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"},
+                 {Big_Verde:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
+      var bigTemplateVerde = $("#big-verde").html();
+      var theBigTemplateVerde = Handlebars.compile(bigTemplateVerde);
+      $(".big-verde").append (theBigTemplateVerde(big_verde));
+
+      //************MOTOS ROJO****************//
+      var small_rojo =[{Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"0"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"1"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"2"},
+                    {Small_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg", slide:"3"}];
+      var smallTemplateRojo = $("#small-rojo").html();
+      var theSmallTemplateRojo = Handlebars.compile(smallTemplateRojo);
+      $(".small-rojo").append (theSmallTemplateRojo(small_rojo));
+
+      var big_rojo =[{state: "active", Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"},
+                 {Big_Rojo:"/images/Fotos Motos/super-deportivas/R15/R15 gris-rojo/R15_negro-gris-rojo.jpg"}];
+      var bigTemplateRojo = $("#big-rojo").html();
+      var theBigTemplateRojo = Handlebars.compile(bigTemplateRojo);
+      $(".big-rojo").append (theBigTemplateRojo(big_rojo));
+
+      //************TEXTO****************//
+      var name = [{ name:detalleValue }];
+      var nameTemplateScript = $("#name-template").html();
+      var theNameTemplate = Handlebars.compile(nameTemplateScript);
+      $(".addName").append (theNameTemplate(name));
+
+      var color = [{color:"blanco", NomColor:"rojo"}];
+      var nameTemplateColor = $("#color-template").html();
+      var theNameTemplateColor = Handlebars.compile(nameTemplateColor);
+      $(".addColor").append(theNameTemplateColor(color));
     }
 
     if (detalleValue == "Bolt Negro") {

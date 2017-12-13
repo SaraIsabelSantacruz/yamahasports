@@ -75,8 +75,8 @@ $(function() {
      }
 
      else if(reqs == "http://localhost:3000/catal1?todo-terreno"){
-       var motoData = [{name:"XTZ 125 Negro", price:199.00, url:"/images/Fotos Motos/todo-terreno/XTZ125 negro/galeria9.png", class:"first"},
-                       {name:"XT 660R Blanco", price:199.00, url:"/images/Fotos Motos/todo-terreno/XT660R blanco/yamaha_356249_2014_yam_xt660r_eu_pws1_stu_007.jpg"}];
+       var motoData = [{name:"XTZ 125", price:199.00, url:"/images/Fotos Motos/todo-terreno/XTZ 125/blanco/galeria1.png", class:"first"},
+                       {name:"XT 660R", price:199.00, url:"/images/Fotos Motos/todo-terreno/XT 660R/blanco/yamaha_356249_2014_yam_xt660r_eu_pws1_stu_007.png"}];
 
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
@@ -89,11 +89,8 @@ $(function() {
      }
 
      else if(reqs == "http://localhost:3000/catal1?deportivas"){
-       var motoData = [{name:"MT 10 Azul", price:199.00, url:"/images/Fotos Motos/deportivas/MT 10 azul/sstbmt10_galeria_azul_0387470.png", class:"first"},
-                       {name:"MT 09 Azul", price:199.00, url:"/images/Fotos Motos/deportivas/MT09 azul/mt09 azul3.png"},
-                       {name:"MT 09 Tracer Verde", price:199.00, url:"/images/Fotos Motos/deportivas/MT 09 Tracer verde/2017_YAM_MT09TR_EU_DNMGMG_STU_002_03.jpg"},
-                       {name:"MT 07 Blanco", price:199.00, url:"/images/Fotos Motos/deportivas/MT 07 blanco/2017_YAM_MT07_EU_BWP1_STU_005_03.jpg"},
-                       {name:"MT 03 Gris", price:199.00, url:"/images/Fotos Motos/deportivas/MT03/9C2A0290.jpeg"}];
+       var motoData = [{name:"MT 03", price:199.00, url:"/images/Fotos Motos/deportivas/MT 03/azul/9C2A0263.png", class:"first"},
+                       {name:"YZ 125", price:199.00, url:"/images/Fotos Motos/deportivas/YZ125/2016_YAM_YZ125LC_EU_DPBSE_STU_007_03.jpeg"}];
 
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
@@ -106,10 +103,10 @@ $(function() {
      }
 
      else if(reqs == "http://localhost:3000/catal1?super"){
-       var motoData = [{name:"R1 Rojo", price:199.00, url:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", class:"first"},
-                       {name:"R1M Gris Azul", price:199.00, url:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_01072745.png"},
-                       {name:"R3 Azul", price:199.00, url:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul004.png"},
-                       {name:"R15 Negro Gris Verde", price:199.00, url:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
+       var motoData = [{name:"R1", price:199.00, url:"/images/Fotos Motos/super-deportivas/R1 rojo/sstbr108gallery39534.png", class:"first"},
+                       {name:"R1M", price:199.00, url:"/images/Fotos Motos/super-deportivas/R1M/sstbproduct_yzfr1m_01072745.png"},
+                       {name:"R3", price:199.00, url:"/images/Fotos Motos/super-deportivas/R3 azul/sstbazul004.png"},
+                       {name:"R15", price:199.00, url:"/images/Fotos Motos/super-deportivas/R15/R15 gris-verde/R15_negro-gris-verde.jpg"}];
 
        var theTemplateScript = $("#shoe-template").html();
        var theTemplate = Handlebars.compile (theTemplateScript);
@@ -141,8 +138,8 @@ $(function() {
                        {name:"Grizzly 700 Rojo", price:199.00, url:"/images/Fotos Motos/cuatrimotos/Grizzly 700 rojo/2015_YAM_YFM700FWAN_EU_RTR_STU_002.jpg", class:"two"},
                        {name:"Raptor 90", price:199.00, url:"/images/Fotos Motos/cuatrimotos/Raptor 90/2016_YAM_YFM90_EU_DPBSE_STU_002.jpg", class:"two"},
                        {name:"Raptor 700", price:199.00, url:"/images/Fotos Motos/cuatrimotos/raptor700/4.jpg", class:"two"},
-                       {name:"Viking Azul", price:199.00, url:"/images/Fotos Motos/cuatrimotos/Viking azul/VikingSE4.jpg", class:"two"},
-                       {name:"Viking VI Camuflado", price:199.00, url:"/images/Fotos Motos/cuatrimotos/Viking VI camo/Viking VI camuflado 2016 (4).jpg", class:"two"},
+                       {name:"Viking VI", price:199.00, url:"/images/Fotos Motos/cuatrimotos/Viking azul/VikingSE4.jpg", class:"two"},
+                       {name:"Viking", price:199.00, url:"/images/Fotos Motos/cuatrimotos/Viking VI camo/Viking VI camuflado 2016 (4).jpg", class:"two"},
                        {name:"YFZ 450R", price:199.00, url:"/images/Fotos Motos/cuatrimotos/YFZ450R/2017_YAM_YFZ450R_EU_DPBSE_STU_007.jpg", class:"two"}];
 
        var theTemplateScript = $("#shoe-template").html();
