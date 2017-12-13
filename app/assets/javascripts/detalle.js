@@ -1,6 +1,7 @@
 
 $(window).on('load', function () {
     "use strict";
+
     var url = window.location.href;
     var options = {
         twitter: true,
@@ -8,10 +9,7 @@ $(window).on('load', function () {
         googlePlus : true
     };
     $('.socialShare').shareButtons(url, options);
-
-
     var detalleValue = localStorage.getItem("data-detalle");
-
     console.log(url);
 
     $("#carousel-negro").hide();
